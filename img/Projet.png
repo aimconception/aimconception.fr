@@ -1,0 +1,179 @@
+<section class="projets">
+    <h2>Nos réalisations</h2>
+
+    <p>
+        Découvrez quelques projets réalisés par AIM Conception dans le Morbihan.
+        Chaque projet est conçu sur mesure afin de répondre aux besoins de nos clients
+        et de respecter les règles d'urbanisme en vigueur.
+    </p>
+
+    <div class="galerie">
+
+        <article class="carte">
+            <img src="images/projet-maison-moderne.jpg"
+                 alt="Projet de maison contemporaine avec permis de construire à Lorient">
+
+            <div class="contenu">
+                <h3>Maison contemporaine</h3>
+
+                <p>
+                    Conception complète d'une maison contemporaine comprenant
+                    les plans, les façades 3D et le dossier de permis de construire.
+                </p>
+
+                <ul>
+                    <li>✔ Plans personnalisés</li>
+                    <li>✔ Modélisation 3D</li>
+                    <li>✔ Permis de construire</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="carte">
+            <img src="images/projet-villa-piscine.jpg"
+                 alt="Maison avec piscine conçue par AIM Conception">
+
+            <div class="contenu">
+                <h3>Villa avec piscine</h3>
+
+                <p>
+                    Étude complète d'une maison individuelle avec terrasse et piscine,
+                    intégrée à un terrain en pente.
+                </p>
+
+                <ul>
+                    <li>✔ Implantation sur terrain</li>
+                    <li>✔ Terrasse</li>
+                    <li>✔ Piscine</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="carte">
+            <img src="images/plan-amenagement.jpg"
+                 alt="Plan d'aménagement intérieur réalisé par AIM Conception">
+
+            <div class="contenu">
+                <h3>Plan d'aménagement intérieur</h3>
+
+                <p>
+                    Organisation optimisée des espaces de vie afin d'offrir
+                    confort, luminosité et circulation fluide.
+                </p>
+            </div>
+        </article>
+
+        <article class="carte">
+            <img src="images/plan-vide-sanitaire.jpg"
+                 alt="Plan technique vide sanitaire">
+
+            <div class="contenu">
+                <h3>Plans techniques</h3>
+
+                <p>
+                    Réalisation des plans techniques destinés aux entreprises
+                    et au dépôt du permis de construire.
+                </p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<style>
+
+.projets{
+max-width:1300px;
+margin:auto;
+padding:60px 20px;
+font-family:Arial,sans-serif;
+}
+
+.projets h2{
+text-align:center;
+font-size:38px;
+margin-bottom:10px;
+color:#0E3A5D;
+}
+
+.projets p{
+text-align:center;
+max-width:850px;
+margin:auto auto 40px;
+line-height:1.7;
+color:#555;
+}
+
+.galerie{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+gap:30px;
+
+}
+
+.carte{
+
+background:white;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 8px 25px rgba(0,0,0,.12);
+
+transition:.3s;
+
+}
+
+.carte:hover{
+
+transform:translateY(-8px);
+
+}
+
+.carte img{
+
+width:100%;
+
+height:260px;
+
+object-fit:cover;
+
+}
+
+.contenu{
+
+padding:25px;
+
+}
+
+.contenu h3{
+
+margin-top:0;
+
+color:#0E3A5D;
+
+}
+
+.contenu p{
+
+text-align:left;
+
+margin-bottom:15px;
+
+}
+
+.contenu ul{
+
+padding-left:20px;
+
+line-height:1.8;
+
+color:#444;
+
+}
+
+</style>
