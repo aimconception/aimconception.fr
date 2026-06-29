@@ -1,161 +1,101 @@
-# Guide d'intégration — AIM Conception
-## Pages localités + service RLV
-
----
-
-## ÉTAPE 1 — Nommer vos photos correctement
-
-Chaque page attend une photo dans le dossier `img/realisations/`.
-Renommez vos fichiers exactement comme indiqué ci-dessous :
-
-| Votre photo originale | Nom à donner au fichier |
-|---|---|
-| proiect_casa_de_vacanta_Guidel.png | `guidel-maison-vacances.jpg` |
-| Proiect_casa_de_vacanta_inzinzack.png | `inzinzac-villa-contemporaine.jpg` |
-| Proiect_Casa_Lorient.png | `lorient-maison-r2.jpg` |
-| Proiect_extension_Lorient.png | `lorient-extension-piscine.jpg` |
-| Proiect_casa_noua_lanester.png | `lanester-plain-pied-piscine.jpg` |
-| proiect_casa_si_amenajare_exterioara_Caudan_.png | `caudan-maison-pierre-paysager.jpg` |
-| proiect_case_pasive_Ploemeur_.png | `ploemeur-maisons-passives.jpg` |
-| Proiect_extension_Ploemeur_.png | `ploemeur-extension-facade.jpg` |
-
-> ⚠️ Vous pouvez garder le format .png — changez juste le nom.
-> Dans ce cas, ouvrez chaque fichier HTML et remplacez `.jpg` par `.png` dans la balise `<img src=...>`.
-
----
-
-## ÉTAPE 2 — Placer les fichiers sur votre serveur
-
-Structure de dossiers à respecter sur votre hébergement :
-
-```
-aimconception.fr/
-├── index.html              ← déjà en place
-├── services.html           ← déjà en place
-├── realisations.html       ← déjà en place
-├── contact.html            ← déjà en place
-│
-├── img/
-│   └── realisations/       ← CRÉER ce sous-dossier s'il n'existe pas
-│       ├── guidel-maison-vacances.jpg
-│       ├── inzinzac-villa-contemporaine.jpg
-│       ├── lorient-maison-r2.jpg
-│       ├── lorient-extension-piscine.jpg
-│       ├── lanester-plain-pied-piscine.jpg
-│       ├── caudan-maison-pierre-paysager.jpg
-│       ├── ploemeur-maisons-passives.jpg
-│       └── ploemeur-extension-facade.jpg
-│
-└── localites/              ← CRÉER ce dossier
-    ├── guidel.html
-    ├── inzinzac-lochrist.html
-    ├── lorient-maison.html
-    ├── lorient-extension.html
-    ├── lanester.html
-    ├── caudan.html
-    ├── ploemeur-passif.html
-    ├── ploemeur-extension.html
-    └── releve-existant.html
-```
-
----
-
-## ÉTAPE 3 — Ajuster les chemins d'images dans les fichiers HTML
-
-Si vous placez les pages dans un dossier `/localites/`,
-les chemins d'images `../img/realisations/` sont déjà corrects.
-
-Si vous les placez à la racine du site (même niveau que index.html),
-remplacez `../img/realisations/` par `img/realisations/` dans chaque fichier.
-
-**Comment faire la modification :**
-1. Ouvrez le fichier HTML dans un éditeur de texte (Notepad++, VS Code, etc.)
-2. Utilisez Ctrl+H (Rechercher / Remplacer)
-3. Rechercher : `../img/realisations/`
-4. Remplacer par : `img/realisations/`
-5. Cliquez sur "Remplacer tout"
-6. Enregistrez
-
----
-
-## ÉTAPE 4 — Ajouter les liens dans votre menu de navigation
-
-Dans chaque fichier HTML existant du site (index.html, services.html, etc.),
-ajoutez les nouvelles pages dans le menu. Exemple :
-
-```html
-<!-- Avant -->
-<li><a href="/realisations.html">Réalisations</a></li>
-
-<!-- Après — ajoutez un sous-menu ou des liens directs -->
-<li><a href="/localites/releve-existant.html">Relevé de l'Existant</a></li>
-```
-
-Pour les pages localités, vous pouvez les lier depuis la page `realisations.html`
-en ajoutant des boutons "Voir le projet" sous chaque réalisation.
-
----
-
-## ÉTAPE 5 — Ajouter les pages à Google Search Console
-
-Pour que Google indexe vos nouvelles pages rapidement :
-
-1. Allez sur https://search.google.com/search-console
-2. Connectez-vous avec le compte propriétaire du site
-3. Dans le menu gauche : **Inspection d'URL**
-4. Collez l'URL de chaque page (ex: https://aimconception.fr/localites/guidel.html)
-5. Cliquez sur **"Demander l'indexation"**
-6. Répétez pour chacune des 9 pages
-
----
-
-## ÉTAPE 6 — Mettre à jour le sitemap (optionnel mais recommandé)
-
-Si votre site possède un fichier `sitemap.xml`, ajoutez-y les nouvelles URLs :
-
-```xml
-<url>
-  <loc>https://www.aimconception.fr/localites/guidel.html</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
-<url>
-  <loc>https://www.aimconception.fr/localites/lanester.html</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
-<!-- Répéter pour chaque page -->
-<url>
-  <loc>https://www.aimconception.fr/localites/releve-existant.html</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.9</priority>
-</url>
-```
-
----
-
-## ÉTAPE 7 — Vérifier que tout fonctionne
-
-Après mise en ligne, vérifiez chaque page :
-
-- [ ] La photo s'affiche correctement
-- [ ] Le menu de navigation fonctionne (liens vers Services, Réalisations, Contact)
-- [ ] Le bouton "Demander un devis gratuit" renvoie vers contact.html
-- [ ] Le bouton WhatsApp ouvre bien WhatsApp avec le bon numéro
-- [ ] La page s'affiche correctement sur mobile (réduisez la fenêtre du navigateur)
-
----
-
-## Résumé des URLs finales
-
-| Page | URL sur votre site |
-|---|---|
-| Relevé de l'Existant | /localites/releve-existant.html |
-| Guidel | /localites/guidel.html |
-| Inzinzac-Lochrist | /localites/inzinzac-lochrist.html |
-| Lorient — Maison | /localites/lorient-maison.html |
-| Lorient — Extension | /localites/lorient-extension.html |
-| Lanester | /localites/lanester.html |
-| Caudan | /localites/caudan.html |
-| Ploemeur — Passif | /localites/ploemeur-passif.html |
-| Ploemeur — Extension | /localites/ploemeur-extension.html |
+ This token has no expiration date[bannalec.html](https://github.com/user-attachments/files/29464247/bannalec.html)
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dessinateur Plans de Maison à Bannalec | AIM Conception – Permis de Construire Finistère</title>
+<meta name="description" content="Plans de maison sur mesure à Bannalec – permis de construire, extensions, relevé de l'existant. Marius, dessinateur à Lorient. Devis gratuit sous 48h.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">AIM <em>Conception</em></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../services.html">Services</a></li>
+    <li><a href="../realisations.html">Réalisations</a></li>
+    <li><a href="releve-existant.html">Relevé de l'Existant</a></li>
+    <li><a href="../contact.html" class="nav-cta">Devis gratuit</a></li>
+  </ul>
+  <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="hero-local">
+  <div class="hl-img"><img src="../img/realisations/lorient-maison-r2.jpg" alt="Plans de maison à Bannalec – AIM Conception"></div>
+  <div class="hl-content">
+    <span class="eyebrow">Réalisation — Bannalec, Finistère</span>
+    <h1 class="display d-lg hl-title" style="margin-bottom:1.4rem">Plans de maison<br>à <em>Bannalec</em></h1>
+    <p class="lead" style="max-width:400px;margin-bottom:2.5rem">Dessinateur basé à Lorient, j'interviens à Bannalec pour vos plans de maison, extensions et permis de construire — avec une connaissance approfondie du PLU local.</p>
+    <div class="btn-group">
+      <a href="../contact.html" class="btn btn-dark">Devis gratuit</a>
+      <a href="https://wa.me/33683545008" class="btn btn-outline">WhatsApp</a>
+    </div>
+    <div class="hl-badges">
+      <div class="hl-badge"><strong>48h</strong><span>Réponse garantie</span></div>
+      <div class="hl-badge"><strong>100%</strong><span>Sur mesure</span></div>
+      <div class="hl-badge"><strong>PLU</strong><span>Bannalec maîtrisé</span></div>
+    </div>
+  </div>
+</div>
+<section class="sec sec-white">
+  <div class="wrap">
+    <div class="g2">
+      <div>
+        <span class="eyebrow">Intervention à Bannalec</span>
+        <h2 class="display d-md" style="margin-bottom:1.2rem">Plans de maison & permis de construire à Bannalec</h2>
+        <p class="body-t" style="margin-bottom:1rem">Bannalec, commune rurale du Finistère en développement résidentiel, offre des opportunités de construction sur de beaux terrains. J'accompagne les projets de maison individuelle à Bannalec avec des plans sur mesure, adaptés aux parcelles souvent généreuses de ce secteur.</p>
+        <p class="body-t">Que vous souhaitiez construire une maison neuve, agrandir votre habitation ou régulariser des travaux existants, je constitue votre dossier de permis de construire ou de déclaration préalable avec soin et réactivité.</p>
+        <ul class="specs">
+          <li><span class="lbl">Localité</span><span class="val">Bannalec (29380)</span></li>
+          <li><span class="lbl">Territoire</span><span class="val">Communauté de Communes de Quimperlé</span></li>
+          <li><span class="lbl">Type de projet</span><span class="val">Maison individuelle / Extension</span></li>
+          <li><span class="lbl">Prestations</span><span class="val">Plans, permis de construire, déclaration préalable</span></li>
+          <li><span class="lbl">PLU applicable</span><span class="val">PLU Bannalec — reculs, emprise, hauteur</span></li>
+        </ul>
+      </div>
+      <div class="proj-img"><img src="../img/realisations/lorient-maison-r2.jpg" alt="Plans de maison à Bannalec – AIM Conception"></div>
+    </div>
+  </div>
+</section>
+<section class="sec sec-dark">
+  <div class="wrap">
+    <span class="eyebrow">Mes prestations à Bannalec</span>
+    <h2 class="display d-md" style="margin-bottom:2.5rem;color:var(--warm-white)">Ce que je réalise pour vous</h2>
+    <div class="g3">
+      <div class="card"><div class="card-body"><div class="card-tag">Prestation 1</div><div class="card-title">Plans de maison individuelle</div><div class="card-desc">Conception sur mesure pour votre terrain à Bannalec, intégrant les règles PLU locales.</div></div></div>
+      <div class="card"><div class="card-body"><div class="card-tag">Prestation 2</div><div class="card-title">Permis de construire</div><div class="card-desc">Dossier complet — je gère l'ensemble des pièces graphiques et administratives pour vous.</div></div></div>
+      <div class="card"><div class="card-body"><div class="card-tag">Prestation 3</div><div class="card-title">Extension & rénovation</div><div class="card-desc">Plans d'extension ou de réhabilitation, déclaration préalable incluse si nécessaire.</div></div></div>
+    </div>
+  </div>
+</section>
+<div class="rlv">
+  <div class="rlv-in">
+    <div>
+      <div class="rlv-title">Pas de plans de votre logement actuel ?</div>
+      <p class="rlv-text">Je propose le Relevé de l'Existant (RLV) sur Bannalec et tout le secteur de Quimperlé Communauté : mesure sur site et dessin précis de vos plans actuels.</p>
+    </div>
+    <a href="releve-existant.html" class="btn btn-white" style="flex-shrink:0">En savoir plus →</a>
+  </div>
+</div>
+<section class="sec cta-final">
+  <div class="wrap" style="max-width:620px;text-align:center;">
+    <span class="eyebrow" style="color:rgba(255,255,255,.45)">Bannalec & Communauté de Communes de Quimperlé</span>
+    <h2 class="display d-lg">Votre projet à Bannalec<br>commence ici.</h2>
+    <p class="lead" style="color:rgba(255,255,255,.7);max-width:400px;margin:.9rem auto 2.2rem">Devis gratuit. Réponse sous 48 heures.</p>
+    <div class="btn-group" style="justify-content:center;">
+      <a href="../contact.html" class="btn btn-white">Demander un devis gratuit</a>
+      <a href="https://wa.me/33683545008" class="btn btn-ow">WhatsApp direct</a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-grid">
+    <div><div class="footer-logo">AIM Conception</div><p class="footer-desc">Dessinateur à Lorient. Plans de maison sur mesure, permis de construire et relevé de l'existant dans le Morbihan et le Finistère.</p><div class="footer-contact"><div>📞 <a href="tel:+33683545008">+33 6 83 54 50 08</a></div></div></div>
+    <div class="footer-col"><h4>Navigation</h4><ul><li><a href="../index.html">Accueil</a></li><li><a href="../services.html">Services</a></li><li><a href="../realisations.html">Réalisations</a></li><li><a href="releve-existant.html">Relevé de l'Existant</a></li><li><a href="../contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Lorient Agglo</h4><ul><li><a href="lorient.html">Lorient</a></li><li><a href="lanester.html">Lanester</a></li><li><a href="ploemeur.html">Ploemeur</a></li><li><a href="guidel.html">Guidel</a></li><li><a href="hennebont.html">Hennebont</a></li></ul></div>
+    <div class="footer-col"><h4>Quimperlé</h4><ul><li><a href="quimperle.html">Quimperlé</a></li><li><a href="moelan-sur-mer.html">Moëlan-sur-Mer</a></li><li><a href="clohars-carnoet.html">Clohars-Carnoët</a></li><li><a href="riec-sur-belon.html">Riec-sur-Belon</a></li><li><a href="bannalec.html">Bannalec</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 AIM Conception – Dessinateur à Lorient</span><a href="../mentions-legales.html">Mentions légales</a></div>
+</footer>
+<script>document.getElementById('navBurger').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));</script>
+</body></html>
