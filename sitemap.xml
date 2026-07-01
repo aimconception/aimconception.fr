@@ -1,8 +1,85 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.aimconception.fr/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.aimconception.fr/services.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.aimconception.fr/realisations.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.aimconception.fr/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.aimconception.fr/contact.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
-</urlset>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Carte SEO interne | AIM Conception</title>
+  <meta name="description" content="Carte complète des pages du site AIM Conception pour optimisation SEO et maillage interne.">
+  <meta name="robots" content="index, follow">
+
+  <style>
+    body{font-family:Arial;background:#f5f6f8;margin:0;padding:0}
+    .wrap{max-width:1000px;margin:auto;padding:40px}
+    h1{color:#1a3c5e}
+    h2{margin-top:30px;color:#1a3c5e}
+    a{color:#2563a8;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .box{background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.1);margin-top:15px}
+    ul{columns:2;gap:20px}
+  </style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+<h1>🧭 Carte SEO interne – AIM Conception</h1>
+
+<p>Cette page sert à structurer tout le maillage interne du site pour améliorer le référencement Google.</p>
+
+<div class="box">
+
+<h2>🏠 Pages principales</h2>
+<ul>
+  <li><a href="index.html">Accueil</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="realisations.html">Réalisations</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="blog.html">Blog</a></li>
+</ul>
+
+<h2>📍 Lorient Agglomération</h2>
+<ul>
+  <li><a href="localites/lorient-agglomeration.html">Lorient Agglomération (pilier SEO)</a></li>
+  <li><a href="localites/lorient.html">Lorient</a></li>
+  <li><a href="localites/lanester.html">Lanester</a></li>
+  <li><a href="localites/ploemeur.html">Ploemeur</a></li>
+  <li><a href="localites/caudan.html">Caudan</a></li>
+  <li><a href="localites/hennebont.html">Hennebont</a></li>
+  <li><a href="localites/guidel.html">Guidel</a></li>
+  <li><a href="localites/larmor-plage.html">Larmor-Plage</a></li>
+  <li><a href="localites/pont-scorff.html">Pont-Scorff</a></li>
+  <li><a href="localites/queven.html">Quéven</a></li>
+  <li><a href="localites/inzinzac-lochrist.html">Inzinzac-Lochrist</a></li>
+</ul>
+
+<h2>🌿 Quimperlé & Finistère</h2>
+<ul>
+  <li><a href="localites/quimperle-communaute.html">Quimperlé Communauté (pilier)</a></li>
+  <li><a href="localites/quimperle.html">Quimperlé</a></li>
+  <li><a href="localites/moelan-sur-mer.html">Moëlan-sur-Mer</a></li>
+  <li><a href="localites/clohars-carnoet.html">Clohars-Carnoët</a></li>
+  <li><a href="localites/riec-sur-belon.html">Riec-sur-Bélon</a></li>
+  <li><a href="localites/bannalec.html">Bannalec</a></li>
+</ul>
+
+<h2>🧠 Blog SEO</h2>
+<ul>
+  <li><a href="blog.html">Blog principal</a></li>
+  <li><a href="blog-permis-construire-lorient.html">Permis construire Lorient</a></li>
+  <li><a href="blog-extension-maison-morbihan.html">Extension maison Morbihan</a></li>
+  <li><a href="blog-declaration-vs-permis.html">Déclaration vs permis</a></li>
+  <li><a href="blog-erreurs-plans-maison.html">Erreurs plans maison</a></li>
+  <li><a href="blog-dessinateur-ou-architecte.html">Dessinateur ou architecte</a></li>
+  <li><a href="blog-construire-lorient-plu.html">PLU Lorient</a></li>
+</ul>
+
+</div>
+
+<p style="margin-top:30px;color:#666">
+💡 Cette page ne se voit pas forcément dans le menu, mais elle booste Google + indexation interne.
+</p>
+
+</div>
+
+</body>
+</html>
