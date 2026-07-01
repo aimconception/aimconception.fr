@@ -12,17 +12,25 @@
 
 <header>
   <div class="nav-inner">
-    <a href="index.html" class="logo-img"><img src="img/logo.png" alt="AIM Conception - Dessinateur à Lorient" height="52" /></a>
-    <button class="menu-toggle" aria-label="Menu">☰</button>
-    <nav aria-label="Navigation principale">
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="realisations.html">Réalisations</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html" class="nav-cta">Devis gratuit</a></li>
-      </ul>
-    </nav>
+    <a href="index.html" class="logo-img">
+      <img src="img/logo.png" alt="AIM Conception - Dessinateur à Lorient" height="52" />
+    </a>
+    <div class="menu-center">
+      <button class="menu-btn" id="menuBtn" aria-haspopup="true" aria-expanded="false" aria-label="Menu">
+        <span class="hamburger-icon" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+      <nav aria-label="Navigation principale">
+        <ul class="dropdown-menu" id="dropdownMenu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html" class="nav-cta">Devis gratuit</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
 
