@@ -90,6 +90,13 @@
   </url>
 
   <url>
+    <loc>https://www.aimconception.fr/localites/lorient-agglomeration.html</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://www.aimconception.fr/localites/lanester.html</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -146,6 +153,13 @@
   </url>
 
   <url>
+    <loc>https://www.aimconception.fr/localites/bubry.html</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://www.aimconception.fr/localites/inzinzac-lochrist.html</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -155,6 +169,13 @@
   <!-- QUIMPERLÉ -->
   <url>
     <loc>https://www.aimconception.fr/localites/quimperle.html</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aimconception.fr/localites/quimperle-communaute.html</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
