@@ -1,8 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.aimconception.fr/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.aimconception.fr/services.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.aimconception.fr/realisations.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.aimconception.fr/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.aimconception.fr/contact.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+
+  <url>
+    <loc>https://www.aimconception.fr/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.aimconception.fr/services.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.aimconception.fr/realisations.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.aimconception.fr/contact.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.aimconception.fr/blog.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.aimconception.fr/blog-permis-construire-lorient.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.aimconception.fr/blog-extension-maison-morbihan.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.aimconception.fr/blog-declaration-vs-permis.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.aimconception.fr/blog-erreurs-plans-maison.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.aimconception.fr/blog-dessinateur-ou-architecte.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.aimconception.fr/blog-construire-lorient-plu.html</loc>
+  </url>
+
+  <!-- LOCALITÉS -->
+  <url>
+    <loc>https://www.aimconception.fr/localites/lorient.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.aimconception.fr/localites/lanester.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.aimconception.fr/localites/ploemeur.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.aimconception.fr/localites/caudan.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.aimconception.fr/localites/hennebont.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.aimconception.fr/localites/guidel.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.aimconception.fr/localites/larmor-plage.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.aimconception.fr/localites/pont-scorff.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.aimconception.fr/localites/queven.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.aimconception.fr/localites/inzinzac-lochrist.html</loc>
+  </url>
+
 </urlset>
