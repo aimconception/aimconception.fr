@@ -12,17 +12,25 @@
 
 <header>
   <div class="nav-inner">
-    <a href="index.html" class="logo-img"><img src="img/logo.png" alt="AIM Conception - Dessinateur à Lorient" height="52" /></a>
-    <button class="menu-toggle" aria-label="Menu">☰</button>
-    <nav aria-label="Navigation principale">
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="realisations.html">Réalisations</a></li>
-        <li><a href="blog.html" class="active">Blog</a></li>
-        <li><a href="contact.html" class="nav-cta">Devis gratuit</a></li>
-      </ul>
-    </nav>
+    <a href="index.html" class="logo-img">
+      <img src="img/logo.png" alt="AIM Conception - Dessinateur à Lorient" height="52" />
+    </a>
+    <div class="menu-center">
+      <button class="menu-btn" id="menuBtn" aria-haspopup="true" aria-expanded="false" aria-label="Menu">
+        <span class="hamburger-icon" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+      <nav aria-label="Navigation principale">
+        <ul class="dropdown-menu" id="dropdownMenu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="contact.html" class="nav-cta">Devis gratuit</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
 
@@ -61,89 +69,4 @@
       </article>
 
       <article class="blog-card">
-        <div class="blog-card-img">🔨</div>
-        <div class="blog-card-body">
-          <span class="blog-tag">Extension</span>
-          <h2>Extension de maison dans le Morbihan : ce que dit le PLU</h2>
-          <p>Les règles d'urbanisme varient selon les communes. Voici ce qu'il faut savoir avant de lancer votre projet d'agrandissement.</p>
-          <a href="blog-extension-maison-morbihan.html">Lire l'article →</a>
-        </div>
-      </article>
-
-      <article class="blog-card">
-        <div class="blog-card-img">📄</div>
-        <div class="blog-card-body">
-          <span class="blog-tag">Démarches</span>
-          <h2>Déclaration préalable vs permis de construire : laquelle choisir ?</h2>
-          <p>Un guide clair pour savoir quelle autorisation d'urbanisme correspond à votre projet de travaux.</p>
-          <a href="blog-declaration-vs-permis.html">Lire l'article →</a>
-        </div>
-      </article>
-
-      <article class="blog-card">
-        <div class="blog-card-img">💡</div>
-        <div class="blog-card-body">
-          <span class="blog-tag">Conseils</span>
-          <h2>Les 5 erreurs à éviter dans vos plans de maison</h2>
-          <p>Circulation, lumière naturelle, rangements oubliés… Les erreurs de conception les plus fréquentes et comment les anticiper.</p>
-          <a href="blog-erreurs-plans-maison.html">Lire l'article →</a>
-        </div>
-      </article>
-
-      <article class="blog-card">
-        <div class="blog-card-img">🌍</div>
-        <div class="blog-card-body">
-          <span class="blog-tag">Lorient</span>
-          <h2>Construire à Lorient : règles PLU et particularités locales</h2>
-          <p>Ce qu'il faut savoir sur le Plan Local d'Urbanisme de Lorient Agglomération avant de déposer votre dossier.</p>
-          <a href="blog-construire-lorient-plu.html">Lire l'article →</a>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<section class="cta-section">
-  <div class="container">
-    <h2>Une question sur votre projet ?</h2>
-    <p>Je réponds à toutes vos questions gratuitement. Contactez-moi par WhatsApp ou via le formulaire.</p>
-    <a href="contact.html" class="btn btn-primary">Me contacter</a>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="logo">AIM<span>Conception</span></div>
-        <p>Dessinateur indépendant à Lorient. Plans de maison sur mesure, permis de construire et déclarations de travaux dans le Morbihan.</p>
-      </div>
-      <div>
-        <h4>Navigation</h4>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="realisations.html">Réalisations</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:+33683545008">+33 6 83 54 50 08</a></li>
-          <li><a href="https://wa.me/33683545008" target="_blank" rel="noopener">WhatsApp</a></li>
-          <li>19 Rue Maurice Thorez<br>56100 Lorient</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 AIM Conception – Dessinateur à Lorient | <a href="mentions-legales.html">Mentions légales</a> | Site réalisé par <a href="https://www.a2tdistributions.com" target="_blank" rel="noopener">A2T Distributions</a> avec <a href="https://claude.ai" target="_blank" rel="noopener">Claude AI</a></p>
-    </div>
-  </div>
-</footer>
-
-<script src="js/script.js"></script>
-</body>
-</html>
+        <div
