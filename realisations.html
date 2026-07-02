@@ -12,17 +12,25 @@
 
 <header>
   <div class="nav-inner">
-    <a href="index.html" class="logo-img"><img src="img/logo.png" alt="AIM Conception - Dessinateur à Lorient" height="52" /></a>
-    <button class="menu-toggle" aria-label="Menu">☰</button>
-    <nav aria-label="Navigation principale">
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="realisations.html" class="active">Réalisations</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html" class="nav-cta">Devis gratuit</a></li>
-      </ul>
-    </nav>
+    <a href="index.html" class="logo-img">
+      <img src="img/logo.png" alt="AIM Conception - Dessinateur à Lorient" height="52" />
+    </a>
+    <div class="menu-center">
+      <button class="menu-btn" id="menuBtn" aria-haspopup="true" aria-expanded="false" aria-label="Menu">
+        <span class="hamburger-icon" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+      <nav aria-label="Navigation principale">
+        <ul class="dropdown-menu" id="dropdownMenu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="realisations.html" class="active">Réalisations</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html" class="nav-cta">Devis gratuit</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
 
@@ -36,133 +44,65 @@
   </div>
 </section>
 
+<section>
   <div class="container text-center">
     <p class="section-tag">Portfolio</p>
     <h2 class="section-title">Projets réalisés par AIM Conception</h2>
     <p class="section-intro">Chaque projet est unique. Voici quelques exemples de réalisations récentes dans le Morbihan.</p>
 
-<!-- ============================= -->
-<!-- 🖼️ GALERIE FOTO COMPLETĂ     -->
-<!-- ============================= -->
+    <!-- Galerie photo complète -->
+    <div class="realisation-gallery" style="margin: 2rem auto; display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
 
-<div class="realisation-gallery" style="margin: 2rem auto; display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+      <div class="realisation-item"><img src="img/Avant_Projet.png" alt="Avant Projet" style="width:100%; border-radius:8px;"></div>
+      <div class="realisation-item"><img src="img/Maison_de_vacances_Hennebont.png" alt="Maison de vacances Hennebont" style="width:100%; border-radius:8px;"></div>
+      <div class="realisation-item"><img src="img/Plan_d'aménagement_intérieur.png" alt="Plan d'aménagement intérieur" style="width:100%; border-radius:8px;"></div>
+      <div class="realisation-item"><img src="img/Plan_détaillé_VS.png" alt="Plan détaillé VS" style="width:100%; border-radius:8px;"></div>
+      <div class="realisation-item"><img src="img/Plans_Coupe.png" alt="Plans Coupe" style="width:100%; border-radius:8px;"></div>
+      <div class="realisation-item"><img src="img/Projet_2_maisons_passives_Ploemeur.png" alt="Projet 2 maisons passives Ploemeur" style="width:100%; border-radius:8px;"></div>
+      <div class="realisation-item"><img src="img/Projet_3D_d'intérieur.png" alt="Projet 3D d'intérieur" style="width:100%; border-radius:8px;"></div>
+      <div class="realisation-item"><img src="img/Projet_d'extension_de_Lorient.png" alt="Projet d'extension de Lorient" style="width:100%; border-radius:8px;"></div>
+      <div class="realisation-item"><img src="img/Projet_d'extension_de_Ploemeur (2).png" alt="Projet d'extension de Ploemeur 2" style="width:100%; border-radius:8px;"></div>
+      <div class="realisation-item"><img src="img/Projet_d'extension_de_Ploemeur.png" alt="Projet d'extension de Ploemeur" style="width:100%; border-radius:8px;"></div>
+      <div class="realisation-item"><img src="img/Projet_de_cuisine_d'été_Lanester.png" alt="Projet de cuisine d'été Lanester" style="width:100%; border-radius:8px;"></div>
+      <div class="realisation-item"><img src="img/Projet_de_rénovation_à_Bubry.png" alt="Projet de rénovation à Bubry" style="width:100%; border-radius:8px;"></div>
+      <div class="realisation-item"><img src="img/Projet_maison_Inzinzach_Lanester.png" alt="Projet maison Inzinzach Lanester" style="width:100%; border-radius:8px;"></div>
+      <div class="realisation-item"><img src="img/Projet_maison_Inzinzach_Lochrist.png" alt="Projet maison Inzinzach Lochrist" style="width:100%; border-radius:8px;"></div>
+      <div class="realisation-item"><img src="img/Projet_maison_Lorient.png" alt="Projet maison Lorient" style="width:100%; border-radius:8px;"></div>
 
-  <div class="realisation-item"><img src="img/Avant_Projet.png" alt="Avant Projet" style="width:100%; border-radius:8px;"></div>
-  <div class="realisation-item"><img src="img/Maison_de_vacances_Hennebont.png" alt="Maison de vacances Hennebont" style="width:100%; border-radius:8px;"></div>
-  <div class="realisation-item"><img src="img/Plan_d'aménagement_intérieur.png" alt="Plan d'aménagement intérieur" style="width:100%; border-radius:8px;"></div>
-  <div class="realisation-item"><img src="img/Plan_détaillé_VS.png" alt="Plan détaillé VS" style="width:100%; border-radius:8px;"></div>
-  <div class="realisation-item"><img src="img/Plans_Coupe.png" alt="Plans Coupe" style="width:100%; border-radius:8px;"></div>
-  <div class="realisation-item"><img src="img/Projet_2_maisons_passives_Ploemeur.png" alt="Projet 2 maisons passives Ploemeur" style="width:100%; border-radius:8px;"></div>
-  <div class="realisation-item"><img src="img/Projet_3D_d'intérieur.png" alt="Projet 3D d'intérieur" style="width:100%; border-radius:8px;"></div>
-  <div class="realisation-item"><img src="img/Projet_d'extension_de_Lorient.png" alt="Projet d'extension de Lorient" style="width:100%; border-radius:8px;"></div>
-  <div class="realisation-item"><img src="img/Projet_d'extension_de_Ploemeur (2).png" alt="Projet d'extension de Ploemeur 2" style="width:100%; border-radius:8px;"></div>
-  <div class="realisation-item"><img src="img/Projet_d'extension_de_Ploemeur.png" alt="Projet d'extension de Ploemeur" style="width:100%; border-radius:8px;"></div>
-  <div class="realisation-item"><img src="img/Projet_de_cuisine_d'été_Lanester.png" alt="Projet de cuisine d'été Lanester" style="width:100%; border-radius:8px;"></div>
-  <div class="realisation-item"><img src="img/Projet_de_rénovation_à_Bubry.png" alt="Projet de rénovation à Bubry" style="width:100%; border-radius:8px;"></div>
-  <div class="realisation-item"><img src="img/Projet_maison_Inzinzach_Lanester.png" alt="Projet maison Inzinzach Lanester" style="width:100%; border-radius:8px;"></div>
-  <div class="realisation-item"><img src="img/Projet_maison_Inzinzach_Lochrist.png" alt="Projet maison Inzinzach Lochrist" style="width:100%; border-radius:8px;"></div>
-  <div class="realisation-item"><img src="img/Projet_maison_Lorient.png" alt="Projet maison Lorient" style="width:100%; border-radius:8px;"></div>
-
-</div>
-
-<!-- ============================= -->
-<!-- SECȚIUNEA PROIECTE (3 COLOANE) -->
-<!-- ============================= -->
-
-<div class="services-grid" style="
-    margin-top:2.5rem;
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:2rem;
-    max-width:1100px;
-    margin-left:auto;
-    margin-right:auto;
-">
-
-  <article class="service-card">
-    <div style="font-size:2.5rem; margin-bottom:.8rem;">🏠</div>
-    <h3>Maison individuelle – Lorient</h3>
-    <p>Plan de maison plain-pied, 110 m², 3 chambres. Permis de construire obtenu en 2 mois.</p>
-    <p style="margin-top:.5rem; color:var(--or); font-weight:700; font-size:.85rem;">Permis obtenu ✓</p>
-  </article>
-
-  <article class="service-card">
-    <div style="font-size:2.5rem; margin-bottom:.8rem;">➕</div>
-    <h3>Extension – Ploemeur</h3>
-    <p>Agrandissement de cuisine et salon, 28 m². Déclaration préalable acceptée sans modification.</p>
-    <p style="margin-top:.5rem; color:var(--or); font-weight:700; font-size:.85rem;">Déclaration acceptée ✓</p>
-  </article>
-
-  <article class="service-card">
-    <div style="font-size:2.5rem; margin-bottom:.8rem;">🏡</div>
-    <h3>Maison avec étage – Hennebont</h3>
-    <p>Plan R+1, 145 m², terrain en pente. Adaptation aux contraintes du PLU d'Hennebont.</p>
-    <p style="margin-top:.5rem; color:var(--or); font-weight:700; font-size:.85rem;">Permis obtenu ✓</p>
-  </article>
-
-  <article class="service-card">
-    <div style="font-size:2.5rem; margin-bottom:.8rem;">🔨</div>
-    <h3>Rénovation intérieure – Quéven</h3>
-    <p>Redistribution complète d'un pavillon années 70, ouverture de murs porteurs, nouveaux plans.</p>
-    <p style="margin-top:.5rem; color:var(--or); font-weight:700; font-size:.85rem;">Réalisé ✓</p>
-  </article>
-
-  <article class="service-card">
-    <div style="font-size:2.5rem; margin-bottom:.8rem;">🚗</div>
-    <h3>Garage et carport – Guidel</h3>
-    <p>Double garage accolé, 40 m². Déclaration préalable et plans de façade.</p>
-    <p style="margin-top:.5rem; color:var(--or); font-weight:700; font-size:.85rem;">Déclaration acceptée ✓</p>
-  </article>
-
-  <article class="service-card">
-    <div style="font-size:2.5rem; margin-bottom:.8rem;">🌿</div>
-    <h3>Maison BBC – Larmor-Plage</h3>
-    <p>Maison bioclimatique, 120 m², orientation optimisée, insertion paysagère soignée.</p>
-    <p style="margin-top:.5rem; color:var(--or); font-weight:700; font-size:.85rem;">Permis obtenu ✓</p>
-  </article>
-
-</div>
-
-<div style="text-align:center; margin-top:2rem;">
-  <a href="contact.html" class="btn btn-primary" style="padding:.6rem 1.2rem; font-size:0.9rem;">
-    Discuter de mon projet
-  </a>
-</div>
-
-</div>
-
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="logo">AIM<span>Conception</span></div>
-        <p>Dessinateur indépendant à Lorient. Plans de maison sur mesure, permis de construire et déclarations de travaux dans le Morbihan.</p>
-      </div>
-      <div>
-        <h4>Navigation</h4>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="realisations.html">Réalisations</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:+33683545008">+33 6 83 54 50 08</a></li>
-          <li><a href="https://wa.me/33683545008" target="_blank" rel="noopener">WhatsApp</a></li>
-          <li>19 Rue Maurice Thorez<br>56100 Lorient</li>
-        </ul>
-      </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 AIM Conception – Dessinateur à Lorient | <a href="mentions-legales.html">Mentions légales</a> | Site réalisé par <a href="https://www.a2tdistributions.com" target="_blank" rel="noopener">A2T Distributions</a> avec <a href="https://claude.ai" target="_blank" rel="noopener">Claude AI</a></p>
-    </div>
-  </div>
-</footer>
 
-<script src="js/script.js"></script>
-</body>
-</html>
+    <!-- Section projets (3 colonnes) -->
+    <div class="services-grid" style="
+        margin-top:2.5rem;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:2rem;
+        max-width:1100px;
+        margin-left:auto;
+        margin-right:auto;
+    ">
+
+      <article class="service-card">
+        <div style="font-size:2.5rem; margin-bottom:.8rem;">🏠</div>
+        <h3>Maison individuelle – Lorient</h3>
+        <p>Plan de maison plain-pied, 110 m², 3 chambres. Permis de construire obtenu en 2 mois.</p>
+        <p style="margin-top:.5rem; color:var(--or); font-weight:700; font-size:.85rem;">Permis obtenu ✓</p>
+      </article>
+
+      <article class="service-card">
+        <div style="font-size:2.5rem; margin-bottom:.8rem;">➕</div>
+        <h3>Extension – Ploemeur</h3>
+        <p>Agrandissement de cuisine et salon, 28 m². Déclaration préalable acceptée sans modification.</p>
+        <p style="margin-top:.5rem; color:var(--or); font-weight:700; font-size:.85rem;">Déclaration acceptée ✓</p>
+      </article>
+
+      <article class="service-card">
+        <div style="font-size:2.5rem; margin-bottom:.8rem;">🏡</div>
+        <h3>Maison avec étage – Hennebont</h3>
+        <p>Plan R+1, 145 m², terrain en pente. Adaptation aux contraintes du PLU d'Hennebont.</p>
+        <p style="margin-top:.5rem; color:var(--or); font-weight:700; font-size:.85rem;">Permis obtenu ✓</p>
+      </article>
+
+      <article class="service-card">
+        <div style="font-size:2.5rem; margin-bottom:.8rem;">🔨</div>
+        <h3>Rénovation intérieure – Quéven</h3>
