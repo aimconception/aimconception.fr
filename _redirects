@@ -1,0 +1,2 @@
+# Redirect /Localités/* to /localites/:splat
+/Localités/* /localites/:splat 301!

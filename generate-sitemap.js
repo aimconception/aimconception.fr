@@ -20,7 +20,7 @@ function getHtmlFiles(dir) {
     const fullPath = path.join(dir, file);
 
     if (fs.statSync(fullPath).isDirectory()) {
-      if (!["img", "css", "js", "localites"].includes(file)) {
+      if (!["img", "css", "js"].includes(file)) {
         results = results.concat(getHtmlFiles(fullPath));
       }
     } else if (file.endsWith(".html")) {
@@ -42,7 +42,10 @@ const urls = pages.map(file => {
   const rel = file.replace("./", "").replace(/\\/g, "/");
   const fileName = path.basename(file);
 
-  const url = `${baseUrl}/${rel}`;
+  // normalize Localités -> localites in generated sitemap
+  const relNormalized = rel.replace(/Localit\u00e9s/g, "localites").replace(/Localités/g, "localites");
+
+  const url = `${baseUrl}/${relNormalized}`;
 
   const rule = rules[fileName] || {
     priority: "0.6",
