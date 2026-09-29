@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.aimconception.fr/sitemap.xml
+
+Sitemap: https://aimconception.fr/sitemap.xml
