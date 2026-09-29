@@ -1,118 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://aimconception.fr/</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/services.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/realisations.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/contact.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/blog.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/blog-permis-construire-lorient.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/blog-extension-maison-morbihan.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/blog-declaration-vs-permis.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/blog-erreurs-plans-maison.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/blog-dessinateur-ou-architecte.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/blog-construire-lorient-plu.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/localites/lorient.html</loc>
-<lastmod>2026-09-29</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/localites/lorient-agglomeration.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/localites/lanester.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/localites/ploemeur.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/localites/guidel.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/localites/hennebont.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/localites/larmor-plage.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/localites/queven.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/localites/caudan.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/localites/pont-scorff.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/localites/inzinzac-lochrist.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/localites/bubry.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/localites/quimperle.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/localites/quimperle-communaute.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/localites/moelan-sur-mer.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/localites/clohars-carnoet.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/localites/riec-sur-belon.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
-<url>
-<loc>https://aimconception.fr/localites/bannalec.html</loc>
-<lastmod>2026-07-01</lastmod>
-</url>
+  <url>
+    <loc>https://aimconception.fr/</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/services.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/realisations.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/contact.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/blog.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/blog-permis-construire-lorient.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/blog-extension-maison-morbihan.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/blog-declaration-vs-permis.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/blog-erreurs-plans-maison.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/blog-dessinateur-ou-architecte.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/blog-construire-lorient-plu.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/localites/lorient.html</loc>
+    <lastmod>2026-09-29</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/localites/lorient-agglomeration.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/localites/lanester.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/localites/ploemeur.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/localites/guidel.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/localites/hennebont.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/localites/larmor-plage.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/localites/queven.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/localites/caudan.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/localites/pont-scorff.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/localites/inzinzac-lochrist.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/localites/bubry.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/localites/quimperle.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/localites/quimperle-communaute.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/localites/moelan-sur-mer.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/localites/clohars-carnoet.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/localites/riec-sur-belon.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://aimconception.fr/localites/bannalec.html</loc>
+    <lastmod>2026-07-01</lastmod>
+  </url>
 </urlset>
+
