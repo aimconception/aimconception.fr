@@ -1,1561 +1,1461 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AIM Conception - Dessinateur à Lorient | Plans de maison sur mesure</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="AIM Conception, dessinateur indépendant à Lorient : plans de maisons sur mesure, extensions, rénovation, permis de construire et déclarations préalables dans le Morbihan et le Finistère.">
+    <title>AIM Conception - Dessinateur à Lorient | Plans de maison sur mesure</title>
 
-<link rel="canonical" href="https://aimconception.fr/">
+    <meta name="description" content="AIM Conception, dessinateur indépendant à Lorient : plans de maisons sur mesure, extensions, rénovation, permis de construire et déclarations préalables dans le Morbihan et le Finistère.">
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="AIM Conception - Dessinateur à Lorient">
-<meta property="og:description" content="Plans de maisons sur mesure, extensions, rénovation et dossiers d'urbanisme à Lorient et dans le Morbihan.">
-<meta property="og:url" content="https://aimconception.fr/">
-<meta property="og:site_name" content="AIM Conception">
+    <meta name="robots" content="index, follow">
 
-<style>
+    <link rel="canonical" href="https://aimconception.fr/">
 
-* {
-    box-sizing: border-box;
-}
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AIM Conception - Dessinateur à Lorient">
+    <meta property="og:description" content="Plans de maisons sur mesure, extensions, rénovation et dossiers d'urbanisme à Lorient et dans le Morbihan.">
+    <meta property="og:url" content="https://aimconception.fr/">
+    <meta property="og:site_name" content="AIM Conception">
+    <meta property="og:image" content="https://aimconception.fr/IMG/logo.png">
+    <meta property="og:locale" content="fr_FR">
 
-html {
-    scroll-behavior: smooth;
-}
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
 
-body {
-    margin: 0;
-    background: #fff;
-    color: #111;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.75;
-}
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="IMG/logo.png">
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-/* =========================
-   HEADER
-========================= */
-
-.header {
-    height: 64px;
-    background: #193e62;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 8px;
-    width: 52px;
-    height: 52px;
-    background: #062c57;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    font-size: 7px;
-    line-height: 1.15;
-    font-weight: bold;
-    letter-spacing: .2px;
-}
-
-.menu-button {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 11px;
-    margin-left: 230px;
-    width: 43px;
-    height: 43px;
-    border: 0;
-    border-radius: 8px;
-    background: #2870b7;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.menu-button span {
-    width: 21px;
-    height: 2px;
-    background: #fff;
-    border-radius: 2px;
-}
-
-/* =========================
-   HERO
-========================= */
-
-.hero {
-    background: linear-gradient(
-        180deg,
-        #193e62 0%,
-        #163655 100%
-    );
-
-    color: #fff;
-    text-align: center;
-    padding: 70px 20px 62px;
-}
-
-.hero .eyebrow {
-    color: #e0a84f;
-    font-size: 13px;
-    margin-bottom: 24px;
-    text-transform: uppercase;
-    letter-spacing: .08em;
-    font-weight: bold;
-}
-
-.hero h1 {
-    margin: 0 auto;
-    max-width: 900px;
-    font-size: 40px;
-    line-height: 1.2;
-    font-weight: 800;
-    letter-spacing: -.5px;
-}
-
-.hero p {
-    margin: 22px auto 0;
-    max-width: 800px;
-    color: #bdd1e4;
-    font-size: 17px;
-}
-
-/* =========================
-   BOUTONS
-========================= */
-
-.buttons {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.button {
-    display: inline-block;
-    padding: 11px 22px;
-    border-radius: 4px;
-    font-weight: bold;
-}
-
-.button-main {
-    background: #e0a84f;
-    color: #fff;
-}
-
-.button-secondary {
-    background: #2870b7;
-    color: #fff;
-}
-
-/* =========================
-   BANDEAU
-========================= */
-
-.trust {
-    background: #f4f6f8;
-    padding: 18px 20px;
-}
-
-.trust-inner {
-    max-width: 1075px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px 35px;
-    color: #173e64;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-/* =========================
-   CONTENU
-========================= */
-
-.content {
-    max-width: 1075px;
-    margin: 0 auto;
-    padding: 62px 0 80px;
-}
-
-section {
-    margin-bottom: 65px;
-}
-
-h2 {
-    margin: 0 0 17px;
-    color: #173e64;
-    font-size: 31px;
-    line-height: 1.25;
-    font-weight: 800;
-}
-
-.section-intro {
-    max-width: 850px;
-    margin-bottom: 32px;
-}
-
-/* =========================
-   SERVICES
-========================= */
-
-.services {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0 50px;
-}
-
-.service {
-    padding: 22px 0 24px;
-    border-bottom: 1px solid #e1e5e8;
-}
-
-.service h3 {
-    margin: 0 0 6px;
-    color: #173e64;
-    font-size: 20px;
-}
-
-.service p {
-    margin: 0;
-}
-
-.service-icon {
-    color: #e0a84f;
-    margin-right: 8px;
-}
-
-/* =========================
-   SECTION ETAPES
-========================= */
-
-.dark-section {
-    background: #f5f7f9;
-    padding: 52px 0;
-}
-
-.dark-section .inner {
-    max-width: 1075px;
-    margin: auto;
-}
-
-.steps {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 22px;
-}
-
-.step {
-    background: #fff;
-    border-top: 4px solid #193e62;
-    padding: 22px;
-}
-
-.step-number {
-    color: #e0a84f;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.step h3 {
-    margin: 6px 0 8px;
-    color: #173e64;
-    font-size: 20px;
-}
-
-.step p {
-    margin: 0;
-}
-
-/* =========================
-   POURQUOI ME CHOISIR
-========================= */
-
-.why {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0 50px;
-}
-
-.why-item {
-    padding: 18px 0;
-    border-bottom: 1px solid #e1e5e8;
-}
-
-.why-item strong {
-    color: #173e64;
-    display: block;
-    font-size: 18px;
-}
-
-/* =========================
-   LOCALITES
-========================= */
-
-.locations {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 35px 55px;
-}
-
-.location-group {
-    border-top: 3px solid #193e62;
-    padding-top: 18px;
-}
-
-.location-group h3 {
-    color: #173e64;
-    margin: 0 0 13px;
-    font-size: 21px;
-}
-
-.location-links {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 7px 20px;
-}
-
-.location-links a {
-    color: #174c7d;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-
-.location-more {
-    margin-top: 17px;
-    font-weight: bold;
-    color: #173e64;
-}
-
-/* =========================
-   ARTICLES
-========================= */
-
-.articles {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.article {
-    border: 1px solid #dfe4e8;
-    padding: 23px;
-    background: #fff;
-}
-
-.article-label {
-    color: #e0a84f;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.article h3 {
-    color: #173e64;
-    font-size: 19px;
-    line-height: 1.35;
-    margin: 7px 0 12px;
-}
-
-.article a {
-    color: #174c7d;
-    font-weight: bold;
-}
-
-/* =========================
-   FAQ
-========================= */
-
-.faq {
-    max-width: 900px;
-}
-
-.faq-item {
-    border-bottom: 1px solid #ddd;
-    padding: 18px 0;
-}
-
-.faq-item strong {
-    display: block;
-    color: #173e64;
-    margin-bottom: 6px;
-}
-
-/* =========================
-   CTA
-========================= */
-
-.cta {
-    background: #173e64;
-    color: #fff;
-    padding: 48px 25px;
-    text-align: center;
-    margin-bottom: 0;
-}
-
-.cta h2 {
-    color: #fff;
-}
-
-.cta p {
-    max-width: 700px;
-    margin: 0 auto 15px;
-    color: #d2deea;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    background: #102f4e;
-    color: #d8e3ed;
-    padding: 38px 20px 25px;
-}
-
-.footer-inner {
-    max-width: 1075px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
-    gap: 45px;
-}
-
-footer h3 {
-    color: #fff;
-    font-size: 16px;
-    margin: 0 0 10px;
-}
-
-footer p,
-footer li {
-    font-size: 14px;
-    color: #c5d3df;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-footer li {
-    margin-bottom: 5px;
-}
-
-.copyright {
-    max-width: 1075px;
-    margin: 28px auto 0;
-    padding-top: 18px;
-    border-top: 1px solid rgba(255,255,255,.15);
-    text-align: center;
-    font-size: 12px;
-    color: #9fb1c1;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media(max-width:900px) {
-
-    .content,
-    .dark-section .inner {
-        padding-left: 28px;
-        padding-right: 28px;
-    }
-
-    .steps {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .locations {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-inner {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .menu-button {
-        margin-left: 170px;
-    }
-}
-
-@media(max-width:600px) {
-
-    .header {
-        height: 64px;
-    }
-
-    .logo {
-        left: 28px;
-        transform: none;
-    }
-
-    .menu-button {
-        right: 18px;
-        left: auto;
-        transform: none;
-        margin: 0;
-    }
-
-    .hero {
-        padding: 50px 20px;
-    }
-
-    .hero h1 {
-        font-size: 30px;
-    }
-
-    .hero p {
-        font-size: 15px;
-    }
-
-    .content {
-        padding: 45px 22px 60px;
-    }
-
-    .dark-section .inner {
-        padding-left: 22px;
-        padding-right: 22px;
-    }
-
-    h2 {
-        font-size: 26px;
-    }
-
-    .services,
-    .why,
-    .locations,
-    .steps,
-    .articles {
-        grid-template-columns: 1fr;
-    }
-
-    .location-links {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-inner {
-        grid-template-columns: 1fr;
-    }
-}
-
-</style>
-
-<!-- =========================
-     SCHEMA.ORG
-========================= -->
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "AIM Conception",
-  "url": "https://aimconception.fr/",
-  "telephone": "+33 6 83 54 50 08",
-  "description": "Dessinateur indépendant à Lorient spécialisé dans les plans de maisons, extensions, rénovation, permis de construire et déclarations préalables.",
-  "areaServed": [
+    <!-- Schema.org -->
+    <script type="application/ld+json">
     {
-      "@type": "City",
-      "name": "Lorient"
-    },
-    {
-      "@type": "City",
-      "name": "Lanester"
-    },
-    {
-      "@type": "City",
-      "name": "Ploemeur"
-    },
-    {
-      "@type": "City",
-      "name": "Guidel"
-    },
-    {
-      "@type": "City",
-      "name": "Hennebont"
-    },
-    {
-      "@type": "City",
-      "name": "Caudan"
-    },
-    {
-      "@type": "City",
-      "name": "Larmor-Plage"
-    },
-    {
-      "@type": "City",
-      "name": "Quéven"
-    },
-    {
-      "@type": "City",
-      "name": "Pont-Scorff"
-    },
-    {
-      "@type": "City",
-      "name": "Inzinzac-Lochrist"
-    },
-    {
-      "@type": "City",
-      "name": "Bubry"
-    },
-    {
-      "@type": "City",
-      "name": "Quimperlé"
-    },
-    {
-      "@type": "City",
-      "name": "Moëlan-sur-Mer"
-    },
-    {
-      "@type": "City",
-      "name": "Clohars-Carnoët"
-    },
-    {
-      "@type": "City",
-      "name": "Riec-sur-Bélon"
-    },
-    {
-      "@type": "City",
-      "name": "Bannalec"
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "AIM Conception",
+      "url": "https://aimconception.fr/",
+      "logo": "https://aimconception.fr/IMG/logo.png",
+      "telephone": "+33 6 83 54 50 08",
+      "description": "Dessinateur indépendant à Lorient spécialisé dans les plans de maisons, extensions, rénovation, permis de construire et déclarations préalables.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "19 Rue Maurice Thorez",
+        "postalCode": "56100",
+        "addressLocality": "Lorient",
+        "addressCountry": "FR"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Lorient"
+        },
+        {
+          "@type": "City",
+          "name": "Lanester"
+        },
+        {
+          "@type": "City",
+          "name": "Ploemeur"
+        },
+        {
+          "@type": "City",
+          "name": "Guidel"
+        },
+        {
+          "@type": "City",
+          "name": "Hennebont"
+        },
+        {
+          "@type": "City",
+          "name": "Caudan"
+        },
+        {
+          "@type": "City",
+          "name": "Larmor-Plage"
+        },
+        {
+          "@type": "City",
+          "name": "Quéven"
+        },
+        {
+          "@type": "City",
+          "name": "Pont-Scorff"
+        },
+        {
+          "@type": "City",
+          "name": "Inzinzac-Lochrist"
+        },
+        {
+          "@type": "City",
+          "name": "Bubry"
+        },
+        {
+          "@type": "City",
+          "name": "Quimperlé"
+        },
+        {
+          "@type": "City",
+          "name": "Moëlan-sur-Mer"
+        },
+        {
+          "@type": "City",
+          "name": "Clohars-Carnoët"
+        },
+        {
+          "@type": "City",
+          "name": "Riec-sur-Bélon"
+        },
+        {
+          "@type": "City",
+          "name": "Bannalec"
+        }
+      ]
     }
-  ]
-}
-</script>
+    </script>
 
 </head>
 
 <body>
 
-<!-- =========================
+<!-- =====================================================
      HEADER
-========================= -->
+===================================================== -->
 
-<header class="header">
+<header>
 
-    <a class="logo" href="index.html" aria-label="AIM Conception">
-        AIM CONCEPTION<br>
-        DESSINATEUR<br>
-        À LORIENT
-    </a>
+    <div class="nav-inner">
 
-    <button class="menu-button" aria-label="Ouvrir le menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+        <a class="logo-img" href="index.html" aria-label="AIM Conception - Accueil">
+            <img
+                src="IMG/logo.png"
+                alt="AIM Conception - Dessinateur à Lorient"
+                class="logo-img"
+            >
+        </a>
+
+        <div class="menu-center">
+
+            <button
+                class="menu-btn"
+                type="button"
+                aria-label="Ouvrir le menu"
+                aria-expanded="false"
+                aria-controls="menu-navigation"
+            >
+
+                <span class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+
+            </button>
+
+            <nav
+                id="menu-navigation"
+                class="dropdown-menu"
+                aria-label="Navigation principale"
+            >
+
+                <ul>
+
+                    <li>
+                        <a href="index.html" class="active">
+                            Accueil
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="realisations.html">
+                            Réalisations
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="nav-cta">
+                            Demander un devis
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </div>
 
 </header>
 
 
-<!-- =========================
+<!-- =====================================================
      HERO
-========================= -->
+===================================================== -->
 
 <section class="hero">
 
-    <div class="eyebrow">
-        AIM Conception · Lorient & Morbihan
-    </div>
+    <div class="container">
 
-    <h1>
-        Plans de maison sur mesure à Lorient et dans le Morbihan
-    </h1>
+        <div class="section-tag">
+            AIM Conception · Lorient & Morbihan
+        </div>
 
-    <p>
-        En tant que dessinateur indépendant, je réalise les plans de votre maison,
-        vos extensions et vos dossiers d'urbanisme, adaptés à votre projet,
-        votre budget et aux règles locales.
-    </p>
+        <h1>
+            Plans de maison sur mesure à Lorient et dans le Morbihan
+        </h1>
 
-    <div class="buttons">
+        <p>
+            Dessinateur indépendant, je conçois vos plans de maison,
+            extensions, rénovations et dossiers d'urbanisme,
+            adaptés à votre projet, votre budget et aux règles locales.
+        </p>
 
-        <a class="button button-main" href="#contact">
-            Demander un devis gratuit
-        </a>
+        <div class="hero-btns">
 
-        <a class="button button-secondary"
-           href="https://wa.me/33683545008">
-            Écrire sur WhatsApp
-        </a>
+            <a
+                href="#contact"
+                class="btn btn-primary"
+            >
+                Demander un devis gratuit
+            </a>
 
-        <a class="button button-secondary"
-           href="tel:+33683545008">
-            06 83 54 50 08
-        </a>
+            <a
+                href="https://wa.me/33683545008"
+                class="btn btn-outline"
+                target="_blank"
+                rel="noopener"
+            >
+                Écrire sur WhatsApp
+            </a>
+
+            <a
+                href="tel:+33683545008"
+                class="btn btn-outline"
+            >
+                06 83 54 50 08
+            </a>
+
+        </div>
+
+        <div class="hero-badges">
+
+            <span class="badge">
+                ✅ 100 % personnalisé
+            </span>
+
+            <span class="badge">
+                ⚡ Réponse sous 48 h
+            </span>
+
+            <span class="badge">
+                📍 Lorient & Morbihan
+            </span>
+
+            <span class="badge">
+                📄 Dossier administratif
+            </span>
+
+        </div>
 
     </div>
 
 </section>
 
 
-<!-- =========================
-     BANDEAU
-========================= -->
-
-<div class="trust">
-
-    <div class="trust-inner">
-
-        <span>✅ 100 % sur mesure</span>
-
-        <span>⚡ Réponse sous 48 heures</span>
-
-        <span>📍 Lorient & Morbihan</span>
-
-        <span>📄 Dossier administratif inclus</span>
-
-    </div>
-
-</div>
-
-
-<main class="content">
-
-
-<!-- =========================
+<!-- =====================================================
      SERVICES
-========================= -->
+===================================================== -->
 
 <section>
 
-    <div class="section-intro">
+    <div class="container text-center">
 
-        <h2>
-            Que font mes services de dessinateur à Lorient ?
+        <div class="section-tag">
+            Mes prestations
+        </div>
+
+        <h2 class="section-title">
+            Votre dessinateur en bâtiment à Lorient
         </h2>
 
-        <p>
-            De la conception des plans à la constitution du dossier administratif,
-            je vous accompagne à chaque étape de votre projet de construction ou de rénovation.
-            Chaque projet est étudié selon le terrain, vos besoins et les règles d'urbanisme
-            applicables.
+        <p class="section-intro">
+            De la première idée jusqu'aux plans nécessaires à vos démarches,
+            je vous accompagne dans vos projets de construction, d'extension,
+            de rénovation et d'aménagement.
+        </p>
+
+    </div>
+
+    <div class="container">
+
+        <div class="services-grid">
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    🏠
+                </div>
+
+                <h3>
+                    Plans de maison individuelle
+                </h3>
+
+                <p>
+                    Conception de plans sur mesure pour votre future maison,
+                    en tenant compte du terrain, de vos besoins,
+                    de votre budget et des contraintes du projet.
+                </p>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    ➕
+                </div>
+
+                <h3>
+                    Extension de maison
+                </h3>
+
+                <p>
+                    Création de plans pour agrandissement, extension,
+                    garage, véranda ou surélévation,
+                    avec une attention particulière portée à l'existant.
+                </p>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    📋
+                </div>
+
+                <h3>
+                    Permis de construire
+                </h3>
+
+                <p>
+                    Préparation des pièces graphiques nécessaires :
+                    plans, plan de masse, façades, coupes et insertion
+                    du projet dans son environnement.
+                </p>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    📄
+                </div>
+
+                <h3>
+                    Déclaration préalable
+                </h3>
+
+                <p>
+                    Accompagnement pour les travaux concernés par une
+                    déclaration préalable : modification de façade,
+                    ouvertures, extension ou autres aménagements.
+                </p>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    🔨
+                </div>
+
+                <h3>
+                    Rénovation & aménagement
+                </h3>
+
+                <p>
+                    Plans pour réorganiser les espaces, modifier les cloisons,
+                    aménager les combles ou transformer l'intérieur
+                    de votre habitation.
+                </p>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-icon">
+                    🌿
+                </div>
+
+                <h3>
+                    Insertion paysagère
+                </h3>
+
+                <p>
+                    Représentation du projet dans son environnement afin
+                    de mieux comprendre son implantation et son aspect extérieur.
+                </p>
+
+            </article>
+
+        </div>
+
+        <div class="text-center mt-2">
+
+            <a
+                href="services.html"
+                class="btn btn-primary"
+            >
+                Découvrir tous mes services →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROCESSUS
+===================================================== -->
+
+<section>
+
+    <div class="container text-center">
+
+        <div class="section-tag">
+            Mon accompagnement
+        </div>
+
+        <h2 class="section-title">
+            Un projet en 4 étapes simples
+        </h2>
+
+        <p class="section-intro">
+            Un accompagnement direct et personnalisé pour avancer
+            sereinement dans votre projet.
         </p>
 
     </div>
 
 
-    <div class="services">
+    <div class="container">
+
+        <div class="process-steps">
+
+            <article class="step">
+
+                <div class="step-num">
+                    1
+                </div>
+
+                <h3>
+                    Échange
+                </h3>
+
+                <p>
+                    Vous me présentez votre projet, votre terrain,
+                    vos besoins et votre budget.
+                </p>
+
+            </article>
 
 
-        <article class="service">
+            <article class="step">
 
-            <h3>
-                <span class="service-icon">🏠</span>
-                Plans pour maisons individuelles
-            </h3>
+                <div class="step-num">
+                    2
+                </div>
 
-            <p>
-                Plans sur mesure pour une maison neuve,
-                adaptés à votre terrain, à vos besoins et à votre style de vie.
-            </p>
+                <h3>
+                    Étude des règles
+                </h3>
 
-        </article>
+                <p>
+                    Les principales contraintes d'urbanisme applicables
+                    au projet sont prises en compte.
+                </p>
 
-
-        <article class="service">
-
-            <h3>
-                <span class="service-icon">➕</span>
-                Agrandissement de maison
-            </h3>
-
-            <p>
-                Agrandissement, véranda, garage attenant ou surélévation :
-                des plans adaptés aux caractéristiques de votre projet.
-            </p>
-
-        </article>
+            </article>
 
 
-        <article class="service">
+            <article class="step">
 
-            <h3>
-                <span class="service-icon">📋</span>
-                Permis de construire
-            </h3>
+                <div class="step-num">
+                    3
+                </div>
 
-            <p>
-                Préparation des pièces graphiques du dossier :
-                plan de situation, plan de masse, façades, coupes et insertion paysagère.
-            </p>
+                <h3>
+                    Plans
+                </h3>
 
-        </article>
+                <p>
+                    Je réalise les plans et nous les ajustons
+                    selon vos besoins et les contraintes du projet.
+                </p>
 
-
-        <article class="service">
-
-            <h3>
-                <span class="service-icon">📄</span>
-                Déclaration préalable
-            </h3>
-
-            <p>
-                Accompagnement pour les projets concernés :
-                ouvertures, abri, modification de façade, petite extension et autres travaux.
-            </p>
-
-        </article>
+            </article>
 
 
-        <article class="service">
+            <article class="step">
 
-            <h3>
-                <span class="service-icon">🔨</span>
-                Rénovation et aménagement
-            </h3>
+                <div class="step-num">
+                    4
+                </div>
 
-            <p>
-                Redistribution des pièces, modification des cloisons,
-                aménagement des combles et transformation de l'intérieur.
-            </p>
+                <h3>
+                    Dossier
+                </h3>
 
-        </article>
+                <p>
+                    Je prépare les pièces graphiques nécessaires
+                    à votre démarche administrative.
+                </p>
 
+            </article>
 
-        <article class="service">
-
-            <h3>
-                <span class="service-icon">🌿</span>
-                Intégration dans le paysage
-            </h3>
-
-            <p>
-                Représentation du projet dans son environnement afin de présenter
-                clairement son implantation et son aspect extérieur.
-            </p>
-
-        </article>
-
+        </div>
 
     </div>
 
-
-    <p style="margin-top:28px">
-
-        <a class="button button-secondary"
-           href="services.html">
-
-            Découvrez tous mes services →
-
-        </a>
-
-    </p>
-
-</section>
-
-</main>
-
-
-<!-- =========================
-     ETAPES
-========================= -->
-
-<section class="dark-section">
-
-<div class="inner">
-
-<section style="margin-bottom:0">
-
-    <h2>
-        Déroulement d'un projet en 4 étapes simples
-    </h2>
-
-
-    <div class="steps">
-
-
-        <article class="step">
-
-            <div class="step-number">
-                ÉTAPE 1
-            </div>
-
-            <h3>
-                Entretien
-            </h3>
-
-            <p>
-                Vous me présentez votre projet,
-                votre terrain et votre budget.
-                Devis gratuit sous 48 heures.
-            </p>
-
-        </article>
-
-
-        <article class="step">
-
-            <div class="step-number">
-                ÉTAPE 2
-            </div>
-
-            <h3>
-                Analyse de la réglementation
-            </h3>
-
-            <p>
-                J'identifie les principales règles d'urbanisme
-                applicables à votre parcelle avant de dessiner.
-            </p>
-
-        </article>
-
-
-        <article class="step">
-
-            <div class="step-number">
-                ÉTAPE 3
-            </div>
-
-            <h3>
-                Plans
-            </h3>
-
-            <p>
-                Je réalise vos plans et nous les ajustons ensemble
-                selon vos besoins et les contraintes du projet.
-            </p>
-
-        </article>
-
-
-        <article class="step">
-
-            <div class="step-number">
-                ÉTAPE 4
-            </div>
-
-            <h3>
-                Dossier
-            </h3>
-
-            <p>
-                Je prépare les pièces graphiques du dossier
-                de permis ou de déclaration préalable nécessaires à votre démarche.
-            </p>
-
-        </article>
-
-
-    </div>
-
-</section>
-
-</div>
-
 </section>
 
 
-<main class="content">
-
-
-<!-- =========================
-     POURQUOI
-========================= -->
+<!-- =====================================================
+     POURQUOI AIM CONCEPTION
+===================================================== -->
 
 <section>
 
-    <h2>
-        Pourquoi me choisir ?
-    </h2>
+    <div class="container text-center">
 
-
-    <div class="why">
-
-
-        <div class="why-item">
-
-            <strong>
-                🎯 Un projet sur mesure
-            </strong>
-
-            Pas de plans standardisés :
-            chaque projet part de votre terrain,
-            de vos besoins et de votre façon de vivre.
-
+        <div class="section-tag">
+            Pourquoi me choisir ?
         </div>
 
+        <h2 class="section-title">
+            Un accompagnement simple et personnalisé
+        </h2>
 
-        <div class="why-item">
+    </div>
 
-            <strong>
-                📐 Une connaissance des réglementations locales
-            </strong>
 
-            Les règles d'urbanisme doivent être étudiées
-            avant de finaliser le projet, notamment selon la commune et la parcelle.
+    <div class="container">
+
+        <div class="avantages-grid">
+
+            <article class="avantage">
+
+                <div class="avantage-icon">
+                    🎯
+                </div>
+
+                <div>
+
+                    <h3>
+                        Projet sur mesure
+                    </h3>
+
+                    <p>
+                        Chaque projet est conçu à partir de votre terrain,
+                        de vos besoins et de votre façon de vivre.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="avantage">
+
+                <div class="avantage-icon">
+                    📐
+                </div>
+
+                <div>
+
+                    <h3>
+                        Règles locales étudiées
+                    </h3>
+
+                    <p>
+                        Les contraintes d'urbanisme sont prises en compte
+                        avant de finaliser le projet.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="avantage">
+
+                <div class="avantage-icon">
+                    ⚡
+                </div>
+
+                <div>
+
+                    <h3>
+                        Réactivité
+                    </h3>
+
+                    <p>
+                        Une seule personne suit votre projet
+                        et reste directement disponible.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="avantage">
+
+                <div class="avantage-icon">
+                    💬
+                </div>
+
+                <div>
+
+                    <h3>
+                        Contact direct
+                    </h3>
+
+                    <p>
+                        Téléphone, WhatsApp ou formulaire :
+                        vous choisissez votre moyen de contact.
+                    </p>
+
+                </div>
+
+            </article>
 
         </div>
-
-
-        <div class="why-item">
-
-            <strong>
-                ⚡ Réactivité
-            </strong>
-
-            Une seule personne suit votre dossier
-            et reste directement disponible pour vos échanges.
-
-        </div>
-
-
-        <div class="why-item">
-
-            <strong>
-                💬 Facile à contacter
-            </strong>
-
-            Par téléphone, WhatsApp ou formulaire :
-            vous choisissez le moyen de contact qui vous convient.
-
-        </div>
-
 
     </div>
 
 </section>
 
 
-<!-- =========================
-     LOCALITES
-========================= -->
+<!-- =====================================================
+     ZONE D'INTERVENTION
+===================================================== -->
 
 <section>
 
-    <h2>
-        Zone d'intervention
-    </h2>
+    <div class="container text-center">
 
-    <p class="section-intro">
-
-        J'interviens à Lorient et dans toute l'agglomération,
-        ainsi que dans le secteur de Quimperlé et plusieurs communes
-        du Morbihan et du Finistère.
-
-    </p>
-
-
-    <div class="locations">
-
-
-        <div class="location-group">
-
-            <h3>
-                📍 Lorient Agglomération
-            </h3>
-
-
-            <div class="location-links">
-
-                <a href="localites/lorient.html">
-                    Lorient
-                </a>
-
-                <a href="localites/lanester.html">
-                    Lanester
-                </a>
-
-                <a href="localites/ploemeur.html">
-                    Ploemeur
-                </a>
-
-                <a href="localites/guidel.html">
-                    Guidel
-                </a>
-
-                <a href="localites/hennebont.html">
-                    Hennebont
-                </a>
-
-                <a href="localites/caudan.html">
-                    Caudan
-                </a>
-
-                <a href="localites/larmor-plage.html">
-                    Larmor-Plage
-                </a>
-
-                <a href="localites/queven.html">
-                    Quéven
-                </a>
-
-                <a href="localites/pont-scorff.html">
-                    Pont-Scorff
-                </a>
-
-                <a href="localites/inzinzac-lochrist.html">
-                    Inzinzac-Lochrist
-                </a>
-
-                <a href="localites/bubry.html">
-                    Bubry
-                </a>
-
-            </div>
-
-
-            <div class="location-more">
-
-                <a href="localites/lorient-agglomeration.html">
-
-                    Toutes les localités de l'agglomération de Lorient →
-
-                </a>
-
-            </div>
-
+        <div class="section-tag">
+            Secteur d'intervention
         </div>
 
+        <h2 class="section-title">
+            Dessinateur à Lorient et dans le Morbihan
+        </h2>
 
-        <div class="location-group">
+        <p class="section-intro">
+            J'interviens à Lorient, dans les communes de Lorient Agglomération,
+            ainsi que dans le secteur de Quimperlé et plusieurs communes
+            du Morbihan et du Finistère.
+        </p>
 
-            <h3>
-                📍 Région de Quimperlé
-            </h3>
+    </div>
 
 
-            <div class="location-links">
+    <div class="container">
 
-                <a href="localites/quimperle.html">
-                    Quimperlé
+        <ul class="zone-list">
+
+            <li>
+                <a href="Localités/lorient.html">
+                    Dessinateur à Lorient
                 </a>
+            </li>
 
-                <a href="localites/moelan-sur-mer.html">
-                    Moëlan-sur-Mer
+            <li>
+                <a href="Localités/lanester.html">
+                    Dessinateur à Lanester
                 </a>
+            </li>
 
-                <a href="localites/clohars-carnoet.html">
-                    Clohars-Carnoët
+            <li>
+                <a href="Localités/ploemeur.html">
+                    Dessinateur à Ploemeur
                 </a>
+            </li>
 
-                <a href="localites/riec-sur-belon.html">
-                    Riec-sur-Bélon
+            <li>
+                <a href="Localités/guidel.html">
+                    Dessinateur à Guidel
                 </a>
+            </li>
 
-                <a href="localites/bannalec.html">
-                    Bannalec
+            <li>
+                <a href="Localités/hennebont.html">
+                    Dessinateur à Hennebont
                 </a>
+            </li>
 
-            </div>
-
-
-            <div class="location-more">
-
-                <a href="localites/quimperle-agglomeration.html">
-
-                    Toutes les communes du secteur de Quimperlé →
-
+            <li>
+                <a href="Localités/caudan.html">
+                    Dessinateur à Caudan
                 </a>
+            </li>
 
-            </div>
+            <li>
+                <a href="Localités/larmor-plage.html">
+                    Dessinateur à Larmor-Plage
+                </a>
+            </li>
+
+            <li>
+                <a href="Localités/queven.html">
+                    Dessinateur à Quéven
+                </a>
+            </li>
+
+            <li>
+                <a href="Localités/pont-scorff.html">
+                    Dessinateur à Pont-Scorff
+                </a>
+            </li>
+
+            <li>
+                <a href="Localités/inzinzac-lochrist.html">
+                    Dessinateur à Inzinzac-Lochrist
+                </a>
+            </li>
+
+            <li>
+                <a href="Localités/bubry.html">
+                    Dessinateur à Bubry
+                </a>
+            </li>
+
+            <li>
+                <a href="Localités/quimperle.html">
+                    Dessinateur à Quimperlé
+                </a>
+            </li>
+
+            <li>
+                <a href="Localités/moelan-sur-mer.html">
+                    Dessinateur à Moëlan-sur-Mer
+                </a>
+            </li>
+
+            <li>
+                <a href="Localités/clohars-carnoet.html">
+                    Dessinateur à Clohars-Carnoët
+                </a>
+            </li>
+
+            <li>
+                <a href="Localités/riec-sur-belon.html">
+                    Dessinateur à Riec-sur-Bélon
+                </a>
+            </li>
+
+            <li>
+                <a href="Localités/bannalec.html">
+                    Dessinateur à Bannalec
+                </a>
+            </li>
+
+        </ul>
+
+
+        <div class="text-center mt-2">
+
+            <a
+                href="Localités/lorient-agglomeration.html"
+                class="btn btn-primary"
+            >
+                Voir toutes les localités de Lorient Agglomération →
+            </a>
 
         </div>
-
 
     </div>
 
 </section>
 
 
-<!-- =========================
-     ARTICLES
-========================= -->
+<!-- =====================================================
+     RÉALISATIONS
+===================================================== -->
 
 <section>
 
-    <h2>
-        Mes conseils avant de vous lancer
-    </h2>
+    <div class="container text-center">
 
-    <p class="section-intro">
+        <div class="section-tag">
+            Réalisations
+        </div>
 
-        Des articles pratiques pour mieux comprendre les démarches
-        d'urbanisme et préparer votre projet.
+        <h2 class="section-title">
+            Quelques projets réalisés
+        </h2>
 
-    </p>
-
-
-    <div class="articles">
-
-
-        <article class="article">
-
-            <div class="article-label">
-                Permis de construire
-            </div>
-
-            <h3>
-                Permis de construire à Lorient
-            </h3>
-
-            <a href="blog/permis-de-construire-lorient.html">
-                Lire l'article →
-            </a>
-
-        </article>
-
-
-        <article class="article">
-
-            <div class="article-label">
-                Agrandissement
-            </div>
-
-            <h3>
-                Agrandissement de maison dans le Morbihan
-            </h3>
-
-            <a href="blog/agrandissement-maison-morbihan.html">
-                Lire l'article →
-            </a>
-
-        </article>
-
-
-        <article class="article">
-
-            <div class="article-label">
-                Démarches
-            </div>
-
-            <h3>
-                Déclaration préalable ou permis de construire ?
-            </h3>
-
-            <a href="blog/declaration-prealable-ou-permis.html">
-                Lire l'article →
-            </a>
-
-        </article>
-
-
-        <article class="article">
-
-            <div class="article-label">
-                Conseils
-            </div>
-
-            <h3>
-                Dessinateur ou architecte : que choisir ?
-            </h3>
-
-            <a href="blog/dessinateur-ou-architecte.html">
-                Lire l'article →
-            </a>
-
-        </article>
-
-
-        <article class="article">
-
-            <div class="article-label">
-                Conseils
-            </div>
-
-            <h3>
-                Les erreurs à éviter dans les plans de votre maison
-            </h3>
-
-            <a href="blog/erreurs-plans-maison.html">
-                Lire l'article →
-            </a>
-
-        </article>
-
-
-        <article class="article">
-
-            <div class="article-label">
-                Urbanisme
-            </div>
-
-            <h3>
-                Construire à Lorient : comprendre le PLU
-            </h3>
-
-            <a href="blog/construire-a-lorient-plu.html">
-                Lire l'article →
-            </a>
-
-        </article>
-
+        <p class="section-intro">
+            Découvrez différents projets de maisons, extensions,
+            rénovations et aménagements réalisés par AIM Conception.
+        </p>
 
     </div>
 
 
-    <p style="margin-top:28px">
+    <div class="container">
 
-        <a class="button button-secondary"
-           href="blog.html">
+        <div class="blog-grid">
 
-            Voir tous les articles →
+            <article class="blog-card">
 
-        </a>
+                <div class="blog-card-img">
+                    🏠
+                </div>
 
-    </p>
+                <div class="blog-card-body">
+
+                    <div class="blog-tag">
+                        Maison
+                    </div>
+
+                    <h3>
+                        Projet de maison à Lorient
+                    </h3>
+
+                    <p>
+                        Étude et conception des plans d'un projet
+                        de maison individuelle.
+                    </p>
+
+                    <a href="realisations.html">
+                        Voir les réalisations →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="blog-card">
+
+                <div class="blog-card-img">
+                    ➕
+                </div>
+
+                <div class="blog-card-body">
+
+                    <div class="blog-tag">
+                        Extension
+                    </div>
+
+                    <h3>
+                        Projet d'extension à Ploemeur
+                    </h3>
+
+                    <p>
+                        Conception d'un projet d'agrandissement
+                        adapté à l'existant.
+                    </p>
+
+                    <a href="realisations.html">
+                        Voir les réalisations →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="blog-card">
+
+                <div class="blog-card-img">
+                    🔨
+                </div>
+
+                <div class="blog-card-body">
+
+                    <div class="blog-tag">
+                        Rénovation
+                    </div>
+
+                    <h3>
+                        Projet de rénovation dans le Morbihan
+                    </h3>
+
+                    <p>
+                        Plans d'aménagement et réflexion sur
+                        la redistribution des espaces.
+                    </p>
+
+                    <a href="realisations.html">
+                        Voir les réalisations →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
 
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
+     CONSEILS / BLOG
+===================================================== -->
+
+<section>
+
+    <div class="container text-center">
+
+        <div class="section-tag">
+            Conseils
+        </div>
+
+        <h2 class="section-title">
+            Préparer votre projet de construction
+        </h2>
+
+        <p class="section-intro">
+            Retrouvez mes conseils pour comprendre les démarches
+            d'urbanisme et préparer votre projet.
+        </p>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="blog-grid">
+
+            <article class="blog-card">
+
+                <div class="blog-card-img">
+                    📋
+                </div>
+
+                <div class="blog-card-body">
+
+                    <div class="blog-tag">
+                        Permis
+                    </div>
+
+                    <h3>
+                        Permis de construire à Lorient
+                    </h3>
+
+                    <p>
+                        Les principales étapes et pièces à prévoir
+                        pour un dossier de permis de construire.
+                    </p>
+
+                    <a href="blog-permis-construire-lorient.html">
+                        Lire l'article →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="blog-card">
+
+                <div class="blog-card-img">
+                    ➕
+                </div>
+
+                <div class="blog-card-body">
+
+                    <div class="blog-tag">
+                        Extension
+                    </div>
+
+                    <h3>
+                        Extension de maison dans le Morbihan
+                    </h3>
+
+                    <p>
+                        Les points à étudier avant de lancer
+                        un projet d'agrandissement.
+                    </p>
+
+                    <a href="blog-extension-maison-morbihan.html">
+                        Lire l'article →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="blog-card">
+
+                <div class="blog-card-img">
+                    📄
+                </div>
+
+                <div class="blog-card-body">
+
+                    <div class="blog-tag">
+                        Urbanisme
+                    </div>
+
+                    <h3>
+                        Déclaration préalable ou permis de construire ?
+                    </h3>
+
+                    <p>
+                        Comprendre les différences entre les deux
+                        principales démarches administratives.
+                    </p>
+
+                    <a href="blog-declaration-vs-permis.html">
+                        Lire l'article →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="blog-card">
+
+                <div class="blog-card-img">
+                    📐
+                </div>
+
+                <div class="blog-card-body">
+
+                    <div class="blog-tag">
+                        Conseils
+                    </div>
+
+                    <h3>
+                        Dessinateur ou architecte : que choisir ?
+                    </h3>
+
+                    <p>
+                        Comprendre les rôles et les situations
+                        dans lesquelles chacun peut intervenir.
+                    </p>
+
+                    <a href="blog-dessinateur-ou-architecte.html">
+                        Lire l'article →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="blog-card">
+
+                <div class="blog-card-img">
+                    ⚠️
+                </div>
+
+                <div class="blog-card-body">
+
+                    <div class="blog-tag">
+                        Conseils
+                    </div>
+
+                    <h3>
+                        Les erreurs à éviter sur vos plans de maison
+                    </h3>
+
+                    <p>
+                        Quelques points à vérifier avant de finaliser
+                        votre projet de construction.
+                    </p>
+
+                    <a href="blog-erreurs-plans-maison.html">
+                        Lire l'article →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="blog-card">
+
+                <div class="blog-card-img">
+                    🏗️
+                </div>
+
+                <div class="blog-card-body">
+
+                    <div class="blog-tag">
+                        Urbanisme
+                    </div>
+
+                    <h3>
+                        Construire à Lorient : comprendre le PLU
+                    </h3>
+
+                    <p>
+                        Pourquoi les règles d'urbanisme doivent être
+                        étudiées avant de concevoir votre projet.
+                    </p>
+
+                    <a href="blog-construire-lorient-plu.html">
+                        Lire l'article →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <div class="text-center mt-2">
+
+            <a
+                href="blog.html"
+                class="btn btn-primary"
+            >
+                Voir tous les articles →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
      FAQ
-========================= -->
+===================================================== -->
 
 <section>
 
-    <h2>
-        Foire aux questions
-    </h2>
+    <div class="container text-center">
 
-
-    <div class="faq">
-
-
-        <div class="faq-item">
-
-            <strong>
-                Quel est le délai d'obtention d'un permis de construire ?
-            </strong>
-
-            Le délai d'instruction dépend notamment de la nature du projet,
-            de sa localisation et des éventuelles consultations nécessaires.
-            Le délai applicable doit être vérifié pour chaque dossier.
-
+        <div class="section-tag">
+            FAQ
         </div>
 
+        <h2 class="section-title">
+            Questions fréquentes
+        </h2>
 
-        <div class="faq-item">
+        <p class="section-intro">
+            Quelques réponses aux questions que vous pouvez vous poser
+            avant de lancer votre projet.
+        </p>
 
-            <strong>
-                Ai-je besoin d'un architecte pour mon projet ?
-            </strong>
+    </div>
 
-            Le recours à un architecte peut être obligatoire selon la nature
-            du projet et les surfaces concernées.
-            Cette question doit être vérifiée avant le dépôt du dossier.
+
+    <div class="container">
+
+        <div class="faq-list">
+
+            <details>
+
+                <summary>
+                    Quel est le délai d'obtention d'un permis de construire ?
+                </summary>
+
+                <div class="faq-answer">
+                    Le délai d'instruction dépend notamment de la nature
+                    du projet, de sa localisation et des éventuelles
+                    consultations nécessaires. Le délai applicable doit
+                    être vérifié pour chaque dossier.
+                </div>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Ai-je besoin d'un architecte pour mon projet ?
+                </summary>
+
+                <div class="faq-answer">
+                    Le recours à un architecte peut être obligatoire
+                    selon la nature du projet et les surfaces concernées.
+                    Cette question doit être vérifiée avant le dépôt
+                    du dossier.
+                </div>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Déclaration préalable ou permis de construire ?
+                </summary>
+
+                <div class="faq-answer">
+                    La procédure dépend notamment de la nature,
+                    de la surface et des caractéristiques des travaux,
+                    ainsi que des règles d'urbanisme applicables.
+                </div>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Dans quelles communes intervenez-vous ?
+                </summary>
+
+                <div class="faq-answer">
+                    J'interviens notamment à Lorient, Lanester,
+                    Ploemeur, Guidel, Hennebont, Caudan,
+                    Larmor-Plage, Quéven et dans plusieurs communes
+                    du Morbihan et du Finistère.
+                </div>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Comment obtenir un devis ?
+                </summary>
+
+                <div class="faq-answer">
+                    Contactez-moi par téléphone, WhatsApp ou via le formulaire
+                    en indiquant le type de projet, sa localisation et,
+                    si possible, les documents dont vous disposez.
+                </div>
+
+            </details>
 
         </div>
-
-
-        <div class="faq-item">
-
-            <strong>
-                Déclaration préalable ou permis de construire ?
-            </strong>
-
-            La procédure dépend notamment de la nature,
-            de la surface et des caractéristiques des travaux
-            ainsi que des règles d'urbanisme applicables.
-
-        </div>
-
-
-        <div class="faq-item">
-
-            <strong>
-                Dans quelles localités exercez-vous votre activité ?
-            </strong>
-
-            J'interviens notamment à Lorient, Lanester, Ploemeur,
-            Guidel, Hennebont, Caudan, Larmor-Plage, Quéven
-            et dans de nombreuses communes du Morbihan et du Finistère.
-
-        </div>
-
-
-        <div class="faq-item">
-
-            <strong>
-                Comment obtenir un devis ?
-            </strong>
-
-            Contactez-moi par téléphone, WhatsApp ou via le formulaire
-            en indiquant le type de projet, sa localisation et,
-            si possible, les documents dont vous disposez.
-
-        </div>
-
 
     </div>
 
 </section>
 
 
-</main>
+<!-- =====================================================
+     CTA CONTACT
+===================================================== -->
 
+<section
+    class="cta-section"
+    id="contact"
+>
 
-<!-- =========================
-     CTA
-========================= -->
+    <div class="container">
 
-<section class="cta" id="contact">
+        <h2>
+            Votre projet commence ici
+        </h2>
 
-    <h2>
-        Votre projet commence ici
-    </h2>
+        <p>
+            Vous avez un projet de construction, d'extension,
+            de rénovation ou besoin d'un dossier d'urbanisme ?
+            Contactez-moi pour échanger sur votre projet.
+        </p>
 
-    <p>
-        Devis gratuit et réponse sous 48 heures.
-        Contactez-moi par téléphone, WhatsApp ou via le formulaire.
-    </p>
+        <div class="hero-btns">
 
+            <a
+                href="tel:+33683545008"
+                class="btn btn-primary"
+            >
+                📞 06 83 54 50 08
+            </a>
 
-    <a class="button button-main"
-       href="tel:+33683545008">
+            <a
+                href="https://wa.me/33683545008"
+                class="btn btn-outline"
+                target="_blank"
+                rel="noopener"
+            >
+                WhatsApp
+            </a>
 
-        06 83 54 50 08
+            <a
+                href="contact.html"
+                class="btn btn-outline"
+            >
+                Formulaire de contact
+            </a>
 
-    </a>
+        </div>
 
-
-    <a class="button button-secondary"
-       href="https://wa.me/33683545008">
-
-        WhatsApp
-
-    </a>
+    </div>
 
 </section>
 
 
-<!-- =========================
+<!-- =====================================================
      FOOTER
-========================= -->
+===================================================== -->
 
 <footer>
 
-    <div class="footer-inner">
+    <div class="container">
+
+        <div class="footer-grid">
 
 
-        <div>
+            <!-- Présentation -->
 
-            <h3>
-                AIM Conception
-            </h3>
+            <div class="footer-brand">
 
-            <p>
-                Dessinateur indépendant à Lorient.
-                Plans de maisons sur mesure, permis de construire
-                et déclarations de travaux dans le Morbihan.
-            </p>
+                <div class="logo">
+                    AIM Conception
+                </div>
+
+                <p>
+                    Dessinateur indépendant à Lorient,
+                    spécialisé dans les plans de maisons,
+                    extensions, rénovation et dossiers
+                    d'urbanisme dans le Morbihan et le Finistère.
+                </p>
+
+            </div>
+
+
+            <!-- Navigation -->
+
+            <div>
+
+                <h4>
+                    Navigation
+                </h4>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Accueil
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="services.html">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="realisations.html">
+                            Réalisations
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+
+            <div>
+
+                <h4>
+                    Contact
+                </h4>
+
+                <ul>
+
+                    <li>
+                        <a href="tel:+33683545008">
+                            +33 6 83 54 50 08
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://wa.me/33683545008"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            WhatsApp
+                        </a>
+                    </li>
+
+                    <li>
+                        19 Rue Maurice Thorez
+                    </li>
+
+                    <li>
+                        56100 Lorient
+                    </li>
+
+                </ul>
+
+            </div>
 
         </div>
 
 
-        <div>
+        <div class="footer-bottom">
 
-            <h3>
-                Navigation
-            </h3>
-
-            <ul>
-
-                <li>
-                    <a href="index.html">
-                        Accueil
-                    </a>
-                </li>
-
-                <li>
-                    <a href="services.html">
-                        Services
-                    </a>
-                </li>
-
-                <li>
-                    <a href="realisations.html">
-                        Réalisations
-                    </a>
-                </li>
-
-                <li>
-                    <a href="blog.html">
-                        Blog
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contact.html">
-                        Contact
-                    </a>
-                </li>
-
-            </ul>
+            © 2026 AIM Conception – Dessinateur à Lorient
+            ·
+            <a href="mentions-legales.html">
+                Mentions légales
+            </a>
 
         </div>
-
-
-        <div>
-
-            <h3>
-                Contact
-            </h3>
-
-            <ul>
-
-                <li>
-                    <a href="tel:+33683545008">
-                        +33 6 83 54 50 08
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://wa.me/33683545008">
-                        WhatsApp
-                    </a>
-                </li>
-
-                <li>
-                    19 Rue Maurice Thorez
-                </li>
-
-                <li>
-                    56100 Lorient
-                </li>
-
-            </ul>
-
-        </div>
-
-
-    </div>
-
-
-    <div class="copyright">
-
-        © 2026 AIM Conception – Dessinateur à Lorient |
-        <a href="mentions-legales.html">
-            Mentions légales
-        </a>
 
     </div>
 
 </footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
