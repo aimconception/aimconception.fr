@@ -3,97 +3,146 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dessinateur Quimperlé Communauté | Permis de Construire Finistère Sud</title>
-  <meta name="description" content="Dessinateur indépendant sur Quimperlé Communauté. Conception de plans de maison, extensions et dossiers d'urbanisme dans les 16 communes du secteur. Devis 48h." />
-  <link rel="canonical" href="https://www.aimconception.fr/Localités/quimperle-communaute.html" />
-  <style>
-    /* ===== STILUL INTEGRAT COERENT ===== */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root { --bleu: #1a3c5e; --bleu2: #2563a8; --or: #c8a96e; --gris: #f5f6f8; --texte: #1e1e1e; --muted: #5a6272; --blanc: #ffffff; --radius: 8px; --shadow: 0 2px 16px rgba(0,0,0,.10); }
-    body { font-family: 'Segoe UI', Arial, sans-serif; color: var(--texte); line-height: 1.7; background: var(--blanc); }
-    a { color: var(--bleu2); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { max-width: 950px; margin: 0 auto; padding: 40px 20px; }
-    header { background: var(--bleu); padding: 15px 20px; box-shadow: 0 2px 8px rgba(0,0,0,.2); }
-    .nav-inner { display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: 0 auto; }
-    .logo { color: var(--blanc); font-size: 1.3rem; font-weight: 700; }
-    .logo span { color: var(--or); }
-    .page-hero { background: linear-gradient(135deg, var(--bleu), #0f2540); color: var(--blanc); padding: 60px 20px; text-align: center; }
-    .page-hero h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: .8rem; }
-    .page-hero h1 span { color: var(--or); }
-    .breadcrumb { font-size: .85rem; margin-bottom: 1rem; color: #8aa0b4; }
-    .breadcrumb a { color: var(--or); }
-    .content-box { background: var(--blanc); padding: 40px; border-radius: var(--radius); box-shadow: var(--shadow); margin-top: -30px; position: relative; z-index: 10; }
-    h2 { color: var(--bleu); margin: 35px 0 15px; font-size: 1.6rem; border-bottom: 2px solid var(--gris); padding-bottom: 8px; }
-    p { margin-bottom: 15px; }
-    .comunes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 20px 0; list-style: none; padding: 0; }
-    .comunes-grid li { background: var(--gris); padding: 10px 15px; border-radius: var(--radius); font-size: 0.95rem; }
-    .btn { display: inline-block; padding: 14px 28px; background: var(--or); color: var(--bleu); font-weight: 700; border-radius: var(--radius); margin-top: 25px; transition: background 0.2s; }
-    .btn:hover { background: #b8923a; text-decoration: none; }
-    footer { background: #0a1d2f; color: #8aa0b4; padding: 30px 20px; text-align: center; margin-top: 60px; font-size: 0.9rem; }
-    footer a { color: var(--or); }
-  </style>
+  <title>Dessinateur Quimperlé Communauté | Permis de Construire & Plans de Maison</title>
+  <meta name="description" content="Dessinateur indépendant sur Quimperlé Communauté : plans de maison, extensions, rénovations et dossiers d’urbanisme sur toutes les communes du secteur." />
+  <link rel="canonical" href="https://www.aimconception.fr/localites/quimperle-communaute.html" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <meta property="og:title" content="Dessinateur Quimperlé Communauté | Plans Maison & Permis de Construire" />
+  <meta property="og:description" content="Accompagnement complet pour permis de construire, extensions et plans de maison sur Quimperlé Communauté." />
+  <meta property="og:type" content="website" />
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"Dessinateur en bâtiment Quimperlé Communauté",
+    "areaServed":"Quimperlé Communauté",
+    "description":"Plans de maison, permis de construire, extensions et déclarations préalables sur toutes les communes de Quimperlé Communauté.",
+    "provider":{"@type":"LocalBusiness","name":"AIM Conception"}
+  }
+  </script>
 </head>
 <body>
 
 <header>
-  <div class="nav-inner"><a href="../index.html" class="logo">AIM<span>Conception</span></a></div>
+  <div class="nav-inner">
+    <a href="../index.html" class="logo-img">
+      <img src="../img/logo.png" alt="AIM Conception - Dessinateur Quimperlé Communauté" height="52" />
+    </a>
+    <div class="menu-center">
+      <button class="menu-btn" id="menuBtn" aria-haspopup="true" aria-expanded="false" aria-label="Menu">
+        <span class="hamburger-icon" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+      <nav aria-label="Navigation principale">
+        <ul class="dropdown-menu" id="dropdownMenu">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../services.html">Services</a></li>
+          <li><a href="../realisations.html">Réalisations</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../contact.html" class="nav-cta">Devis gratuit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </header>
 
 <section class="page-hero">
-  <div class="breadcrumb"><a href="../index.html">Accueil</a> &gt; Localités &gt; Quimperlé Communauté</div>
-  <h1>Dessinateur sur le secteur de <span>Quimperlé Communauté</span></h1>
+  <div class="container">
+    <nav aria-label="Fil d'Ariane" class="breadcrumb">
+      <a href="../index.html">Accueil</a> › Localités › Quimperlé Communauté
+    </nav>
+    <h1>Dessinateur en bâtiment – <span>Quimperlé Communauté</span></h1>
+    <p>Plans de maison, permis de construire et extensions sur les communes de Quimperlé Communauté</p>
+  </div>
 </section>
 
-<main class="container">
-  <div class="content-box">
-    <h2>Plans de maison et dossiers d'urbanisme dans le Finistère Sud</h2>
-    <p>Vous avez un projet de construction, d'extension ou de rénovation globale dans la région de Quimperlé ? En tant que <strong>dessinateur en bâtiment indépendant</strong>, je vous accompagne dans la conception de vos plans de maison sur mesure et dans la préparation complète de vos dossiers administratifs.</p>
-    <p>De l'esquisse initiale aux rendus 3D pour l'insertion paysagère, chaque projet est traité avec une rigueur technique optimale pour valoriser votre patrimoine architectural tout en respectant votre budget.</p>
+<section>
+  <div class="container">
+    <article>
+      <h2 class="section-title">Votre dessinateur sur toute la région de Quimperlé</h2>
+      <p>Quimperlé Communauté couvre plusieurs communes aux caractéristiques très différentes : centre-bourg, vaste zones rurales, secteurs littoraux et secteurs à forte activité résidentielle. Chaque projet doit être examiné selon le terrain, le PLUi intercommunal et les attentes du propriétaire.</p>
+      <p style="margin-top:1rem;">J’accompagne les particuliers dans la réalisation complète de leurs dossiers administratifs, qu’il s’agisse d’une maison neuve, d’une extension, d’une rénovation ou d’un projet d’agrandissement.</p>
 
-    <h2>Maîtrise du PLUi de Quimperlé Communauté</h2>
-    <p>Le territoire de Quimperlé Communauté est régi par un <strong>Plan Local d'Urbanisme intercommunal (PLUi)</strong> unique. Ce document réglemente de manière très précise l'emprise au sol, la hauteur des constructions, l'implantation par rapport aux limites séparatives, ainsi que les contraintes liées à la <em>Loi Littoral</em> pour les communes côtières.</p>
-    <p>Grâce à une étude approfondie de ces règles locales, je conçois des dossiers de <strong>Permis de Construire</strong> et de <strong>Déclaration Préalable (DP)</strong> parfaitement conformes, maximisant ainsi les chances de validation rapide par les services instructeurs de l'agglomération.</p>
+      <h2 class="section-title mt-2">Mes services sur Quimperlé Communauté</h2>
+      <ul style="margin:1rem 0 1rem 1.5rem; color:var(--muted);">
+        <li>Plans de maisons neuves (RE2020)</li>
+        <li>Permis de construire complets</li>
+        <li>Extensions et surélévations</li>
+        <li>Déclarations préalables de travaux</li>
+        <li>Rénovation et optimisation d’habitat</li>
+      </ul>
 
-    <h2>Les 16 communes desservies sur le territoire :</h2>
-    <p>J'interviens de manière réactive pour réaliser vos plans sur l'ensemble des 16 communes de Quimperlé Communauté :</p>
-    
-    <ul class="comunes-grid">
-      <li>📍 <a href="quimperle.html"><strong>Quimperlé</strong></a></li>
-      <li>📍 <a href="moelan-sur-mer.html"><strong>Moëlan-sur-Mer</strong></a></li>
-      <li>📍 <a href="clohars-carnoet.html"><strong>Clohars-Carnoët</strong></a></li>
-      <li>📍 <a href="riec-sur-belon.html"><strong>Riec-sur-Bélon</strong></a></li>
-      <li>📍 <a href="bannalec.html"><strong>Bannalec</strong></a></li>
-      <li>📍 Arzano</li>
-      <li>📍 Baye</li>
-      <li>📍 Guilligomarc'h</li>
-      <li>📍 Le Trévoux</li>
-      <li>📍 Locunolé</li>
-      <li>📍 Mellac</li>
-      <li>📍 Querrien</li>
-      <li>📍 Rédéné</li>
-      <li>📍 Saint-Thurien</li>
-      <li>📍 Scaër</li>
-      <li>📍 Tréméven</li>
-    </ul>
+      <h2 class="section-title mt-2">Comprendre le PLUi de Quimperlé Communauté</h2>
+      <p>Le PLUi définit des règles applicables sur l’ensemble du territoire : implantation, hauteur, distance des limites, matériaux, insertion paysagère et obligation de conformité. Une bonne compréhension de ces règles est essentielle pour éviter les refus ou demandes de compléments.</p>
+    </article>
 
-    <h2>Mes services d'accompagnement :</h2>
-    <p>Que votre projet se situe en zone littorale, en centre-bourg ou en milieu rural, profitez d'une expertise dédiée :</p>
-    <ul style="padding-left: 20px; margin-bottom: 20px;">
-      <li><strong>Construction neuve :</strong> Plans de maisons individuelles contemporaines ou traditionnelles (conformes RE2020).</li>
-      <li><strong>Agrandissement :</strong> Plans d'extensions latérales, surélévations de toiture, création de garages ou de carports.</li>
-      <li><strong>Modélisation 3D :</strong> Insertions paysagères graphiques obligatoires pour les pièces de permis (PCMI6 / DP8).</li>
-    </ul>
+    <h2 class="section-title mt-2 text-center">Communes de Quimperlé Communauté</h2>
+    <div class="services-grid">
+      <div class="service-card text-center"><a href="quimperle.html">Quimperlé</a></div>
+      <div class="service-card text-center"><a href="bannalec.html">Bannalec</a></div>
+      <div class="service-card text-center"><a href="moelan-sur-mer.html">Moëlan-sur-Mer</a></div>
+      <div class="service-card text-center"><a href="clohars-carnoet.html">Clohars-Carnoët</a></div>
+      <div class="service-card text-center"><a href="riec-sur-belon.html">Riec-sur-Bélon</a></div>
+      <div class="service-card text-center"><a href="quimperle.html">Arzano</a></div>
+      <div class="service-card text-center"><a href="quimperle.html">Baye</a></div>
+      <div class="service-card text-center"><a href="quimperle.html">Guilligomarc’h</a></div>
+      <div class="service-card text-center"><a href="quimperle.html">Le Trévoux</a></div>
+      <div class="service-card text-center"><a href="quimperle.html">Locunolé</a></div>
+      <div class="service-card text-center"><a href="quimperle.html">Mellac</a></div>
+      <div class="service-card text-center"><a href="quimperle.html">Querrien</a></div>
+      <div class="service-card text-center"><a href="quimperle.html">Rédéné</a></div>
+      <div class="service-card text-center"><a href="quimperle.html">Saint-Thurien</a></div>
+      <div class="service-card text-center"><a href="quimperle.html">Scaër</a></div>
+      <div class="service-card text-center"><a href="quimperle.html">Tréméven</a></div>
+    </div>
 
-    <center>
-      <a href="../contact.html" class="btn">Demander une étude gratuite de mon projet</a>
-    </center>
+    <div class="container mt-2">
+      <h2 class="section-title">Pourquoi une page pilon est importante ?</h2>
+      <p>Cette page sert d’outil de référence pour l’ensemble du secteur. Elle permet de structurer le site, d’afficher clairement les zones de couverture et d’améliorer la visibilité locale sur les recherches de projets immobiliers.</p>
+
+      <h2 class="section-title mt-2">Types de projets réalisés</h2>
+      <p>Maisons individuelles, extensions contemporaines, rénovations complètes, transformations de dépendances et projets en zone rurale ou littorale.</p>
+    </div>
+
+    <div class="text-center mt-2">
+      <a href="../contact.html" class="btn btn-primary">Demander un devis sur Quimperlé Communauté</a>
+    </div>
   </div>
-</main>
+</section>
 
 <footer>
-  <p>&copy; 2026 AIM Conception | <a href="../mentions-legales.html">Mentions légales</a></p>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">AIM<span>Conception</span></div>
+        <p>Dessinateur indépendant à Lorient. Plans de maison sur mesure, permis de construire et déclarations de travaux dans le Morbihan.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../services.html">Services</a></li>
+          <li><a href="../realisations.html">Réalisations</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+33683545008">+33 6 83 54 50 08</a></li>
+          <li><a href="https://wa.me/33683545008" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li>19 Rue Maurice Thorez<br>56100 Lorient</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AIM Conception – Dessinateur à Lorient | <a href="../mentions-legales.html">Mentions légales</a></p>
+    </div>
+  </div>
 </footer>
 
+<script src="../js/script.js"></script>
 </body>
 </html>
