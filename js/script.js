@@ -5,350 +5,187 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
+    /* =====================================================
+       COMPATIBILITÉ AVEC LES ANCIENS EN-TÊTES
+       Convertit l'ancien menu-toggle en menu identique à l'accueil.
+       ===================================================== */
+
+    const legacyMenuButton = document.querySelector(".menu-toggle");
+    const legacyNav = document.querySelector("header nav");
+
+    if (legacyMenuButton && legacyNav) {
+        const legacyMenu = legacyNav.querySelector("ul");
+
+        if (legacyMenu) {
+            const menuCenter = document.createElement("div");
+            menuCenter.className = "menu-center";
+
+            legacyMenuButton.className = "menu-btn";
+            legacyMenuButton.id = "menuBtn";
+            legacyMenuButton.setAttribute("aria-haspopup", "true");
+            legacyMenuButton.setAttribute("aria-expanded", "false");
+            legacyMenuButton.setAttribute("aria-label", "Menu");
+            legacyMenuButton.innerHTML = '<span class="hamburger-icon" aria-hidden="true"><span></span><span></span><span></span></span>';
+
+            legacyMenu.className = "dropdown-menu";
+            legacyMenu.id = "dropdownMenu";
+
+            legacyNav.parentNode.insertBefore(menuCenter, legacyNav);
+            menuCenter.appendChild(legacyMenuButton);
+            menuCenter.appendChild(legacyNav);
+        }
+    }
 
     /* =====================================================
        MENU HAMBURGER
        ===================================================== */
 
-    const menuButton =
-        document.querySelector(".menu-btn");
-
-    const dropdownMenu =
-        document.querySelector(".dropdown-menu");
-
+    const menuButton = document.querySelector(".menu-btn");
+    const dropdownMenu = document.querySelector(".dropdown-menu");
 
     if (menuButton && dropdownMenu) {
-
-
         /* OUVRIR / FERMER */
-
         menuButton.addEventListener("click", function (event) {
-
             event.stopPropagation();
 
-            const isOpen =
-                menuButton.getAttribute("aria-expanded")
-                === "true";
-
-            menuButton.setAttribute(
-                "aria-expanded",
-                String(!isOpen)
-            );
-
-            dropdownMenu.classList.toggle(
-                "open",
-                !isOpen
-            );
-
+            const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+            menuButton.setAttribute("aria-expanded", String(!isOpen));
+            dropdownMenu.classList.toggle("open", !isOpen);
         });
-
 
         /* EMPÊCHER LE CLIC DANS LE MENU DE LE FERMER */
-
-        dropdownMenu.addEventListener(
-            "click",
-            function (event) {
-                event.stopPropagation();
-            }
-        );
-
-
-        /* CLIC EN DEHORS */
-
-        document.addEventListener(
-            "click",
-            function () {
-
-                menuButton.setAttribute(
-                    "aria-expanded",
-                    "false"
-                );
-
-                dropdownMenu.classList.remove("open");
-
-            }
-        );
-
-
-        /* TOUCHE ÉCHAP */
-
-        document.addEventListener(
-            "keydown",
-            function (event) {
-
-                if (event.key === "Escape") {
-
-                    menuButton.setAttribute(
-                        "aria-expanded",
-                        "false"
-                    );
-
-                    dropdownMenu.classList.remove(
-                        "open"
-                    );
-
-                    menuButton.focus();
-                }
-
-            }
-        );
-
-
-        /* CLIC SUR UN LIEN */
-
-        const menuLinks =
-            dropdownMenu.querySelectorAll("a");
-
-        menuLinks.forEach(function (link) {
-
-            link.addEventListener(
-                "click",
-                function () {
-
-                    menuButton.setAttribute(
-                        "aria-expanded",
-                        "false"
-                    );
-
-                    dropdownMenu.classList.remove(
-                        "open"
-                    );
-
-                }
-            );
-
+        dropdownMenu.addEventListener("click", function (event) {
+            event.stopPropagation();
         });
 
-    }
+        /* CLIC EN DEHORS */
+        document.addEventListener("click", function () {
+            menuButton.setAttribute("aria-expanded", "false");
+            dropdownMenu.classList.remove("open");
+        });
 
+        /* TOUCHE ÉCHAP */
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape") {
+                menuButton.setAttribute("aria-expanded", "false");
+                dropdownMenu.classList.remove("open");
+                menuButton.focus();
+            }
+        });
+
+        /* CLIC SUR UN LIEN */
+        const menuLinks = dropdownMenu.querySelectorAll("a");
+        menuLinks.forEach(function (link) {
+            link.addEventListener("click", function () {
+                menuButton.setAttribute("aria-expanded", "false");
+                dropdownMenu.classList.remove("open");
+            });
+        });
+    }
 
     /* =====================================================
        SCROLL FLUIDE
        ===================================================== */
 
-    const anchorLinks =
-        document.querySelectorAll(
-            'a[href^="#"]'
-        );
-
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
     anchorLinks.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+            const targetId = this.getAttribute("href");
 
-        link.addEventListener(
-            "click",
-            function (event) {
-
-                const targetId =
-                    this.getAttribute("href");
-
-                if (
-                    !targetId ||
-                    targetId === "#"
-                ) {
-                    return;
-                }
-
-                const target =
-                    document.querySelector(targetId);
-
-                if (!target) {
-                    return;
-                }
-
-                event.preventDefault();
-
-                const header =
-                    document.querySelector("header");
-
-                const headerHeight =
-                    header
-                        ? header.offsetHeight
-                        : 0;
-
-                const position =
-                    target.getBoundingClientRect().top
-                    + window.scrollY
-                    - headerHeight
-                    - 15;
-
-                window.scrollTo({
-                    top: position,
-                    behavior: "smooth"
-                });
-
+            if (!targetId || targetId === "#") {
+                return;
             }
-        );
 
+            const target = document.querySelector(targetId);
+            if (!target) {
+                return;
+            }
+
+            event.preventDefault();
+
+            const header = document.querySelector("header");
+            const headerHeight = header ? header.offsetHeight : 0;
+            const position = target.getBoundingClientRect().top + window.scrollY - headerHeight - 15;
+
+            window.scrollTo({
+                top: position,
+                behavior: "smooth"
+            });
+        });
     });
-
 
     /* =====================================================
        ANNÉE AUTOMATIQUE
        ===================================================== */
 
-    const year =
-        new Date().getFullYear();
-
-    const yearElement =
-        document.querySelector("#annee");
-
+    const year = new Date().getFullYear();
+    const yearElement = document.querySelector("#annee");
     if (yearElement) {
         yearElement.textContent = year;
     }
-
 
     /* =====================================================
        LIEN ACTIF DU MENU
        ===================================================== */
 
     if (dropdownMenu) {
-
-        const currentPath =
-            window.location.pathname
-                .split("/")
-                .pop()
-                .toLowerCase();
-
-
-        const links =
-            dropdownMenu.querySelectorAll("a");
-
+        const currentPath = window.location.pathname.split("/").pop().toLowerCase();
+        const links = dropdownMenu.querySelectorAll("a");
 
         links.forEach(function (link) {
-
-            const href =
-                link.getAttribute("href");
-
+            const href = link.getAttribute("href");
             if (!href) {
                 return;
             }
 
-            if (
-                href.startsWith("#") ||
-                href.startsWith("http") ||
-                href.startsWith("tel:") ||
-                href.startsWith("mailto:")
-            ) {
+            if (href.startsWith("#") || href.startsWith("http") || href.startsWith("tel:") || href.startsWith("mailto:")) {
                 return;
             }
 
-            const page =
-                href
-                    .split("/")
-                    .pop()
-                    .split("?")[0]
-                    .split("#")[0]
-                    .toLowerCase();
-
-
-            if (
-                page &&
-                page === currentPath
-            ) {
+            const page = href.split("/").pop().split("?")[0].split("#")[0].toLowerCase();
+            if (page && page === currentPath) {
                 link.classList.add("active");
             }
-
         });
-
     }
-
 
     /* =====================================================
        ANIMATION DES CARTES
        ===================================================== */
 
-    const animatedElements =
-        document.querySelectorAll(
-            ".service-card, .step, .avantage, .blog-card"
-        );
+    const animatedElements = document.querySelectorAll(".service-card, .step, .avantage, .blog-card");
 
-
-    if (
-        animatedElements.length &&
-        "IntersectionObserver" in window
-    ) {
-
-        const observer =
-            new IntersectionObserver(
-                function (entries, observer) {
-
-                    entries.forEach(
-                        function (entry) {
-
-                            if (
-                                entry.isIntersecting
-                            ) {
-
-                                entry.target.classList.add(
-                                    "is-visible"
-                                );
-
-                                observer.unobserve(
-                                    entry.target
-                                );
-
-                            }
-
-                        }
-                    );
-
-                },
-                {
-                    threshold: 0.12
+    if (animatedElements.length && "IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    observer.unobserve(entry.target);
                 }
-            );
+            });
+        }, { threshold: 0.12 });
 
-
-        animatedElements.forEach(
-            function (element) {
-
-                element.classList.add(
-                    "scroll-animation"
-                );
-
-                observer.observe(element);
-
-            }
-        );
-
+        animatedElements.forEach(function (element) {
+            element.classList.add("scroll-animation");
+            observer.observe(element);
+        });
     }
-
 
     /* =====================================================
        FERMETURE MENU AU REDIMENSIONNEMENT
        ===================================================== */
 
-    window.addEventListener(
-        "resize",
-        function () {
-
-            if (
-                window.innerWidth > 768 &&
-                menuButton &&
-                dropdownMenu
-            ) {
-
-                menuButton.setAttribute(
-                    "aria-expanded",
-                    "false"
-                );
-
-                dropdownMenu.classList.remove(
-                    "open"
-                );
-
-            }
-
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 768 && menuButton && dropdownMenu) {
+            menuButton.setAttribute("aria-expanded", "false");
+            dropdownMenu.classList.remove("open");
         }
-    );
-
+    });
 
     /* =====================================================
        CONSOLE
        ===================================================== */
 
-    console.log(
-        "AIM Conception — JavaScript chargé."
-    );
-
+    console.log("AIM Conception — JavaScript chargé.");
 });
